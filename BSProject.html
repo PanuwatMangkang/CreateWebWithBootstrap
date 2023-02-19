@@ -1,0 +1,2227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Magician Card</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="bootstrap" viewBox="0 0 118 94">
+        <title>Bootstrap</title>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"></path>
+    </symbol>
+    <symbol id="facebook" viewBox="0 0 16 16">
+        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
+    </symbol>
+    <symbol id="instagram" viewBox="0 0 16 16">
+        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
+    </symbol>
+    <symbol id="twitter" viewBox="0 0 16 16">
+        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path>
+    </symbol>
+    </svg>
+
+    <!-- Header -->
+    <div class="top-header">
+        <header class="chu_wa_header">
+            <a href="#" class="rum_kid_chu_mai_ook">
+                <img src="sleve.png" width="5%">
+                <div class="logo_head"><span class="fs-4" style="color: snow;"> Yu-Gi-Oh! : Cardpedia</span>
+                </div>
+            </a>
+
+            <ul class="nav d-flex justify-content-end nav-pills">
+                <li class="nav-item"><a href="#" class="nav-link" style="color:rgb(23, 23, 23); background-color: rgb(251, 251, 255);">Home</a></li>
+                <li class="nav-item"><a href="#Normal_Monster" class="nav-link" style="color:rgb(23, 23, 23); background-color: rgb(251, 251, 255);">Normal</a></li>
+                <li class="nav-item"><a href="#Effect_Monster" class="nav-link" style="color:rgb(23, 23, 23); background-color: rgb(251, 251, 255);">Effect Monster</a></li>
+                <li class="nav-item"><a href="#Fusion_Monster" class="nav-link" style="color:rgb(23, 23, 23); background-color: rgb(251, 251, 255);">Fusion</a></li>
+                <li class="nav-item"><a href="#Ritual_Monster" class="nav-link" style="color:rgb(23, 23, 23); background-color: rgb(251, 251, 255);">Ritual</a></li>
+                <li class="nav-item"><a href="#spell_card" class="nav-link" style="color:rgb(23, 23, 23); background-color: rgb(251, 251, 255);">Spell</a></li>
+                <li class="nav-item"><a href="#trap_card" class="nav-link" style="color:rgb(23, 23, 23); background-color: rgb(251, 251, 255);">Trap</a></li>
+            </ul>
+        </header>
+    </div>
+    <!-- Hero -->
+    <br><br><br><br>
+
+    <div class="nua_ha">
+        <div class="page ">
+            <div class="page_body ">
+                <div class="centered ">
+                    <div class="centered-top-container" role="banner ">
+                        <div class="centered-top ">
+                            <h1>
+                                <img src="Yugipedialogo.png" width="300px" height="137px" href=#><a style="color: snow;"> Yu-Gi-Oh! : Cardpedia </a>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="centered-bottom ">
+            <main class="main-container " id="main " role="main " tabindex="-1 ">
+                <div class="main_section " id="page_body " name="เนื้อความของหน้า ">
+                    <div class="widget_Blog " data-version="2 " id="Blog1 ">
+                        <div class="blog-posts hfeed container " style="background-color: black; width: 60%; display:flex; ">
+                            <article class="post-outer-container ">
+                                <div class="post-wrapper ">
+                                    <div class="slide ">
+                                        <div class="post-title-container ">
+                                            <h3 class="post-title entry-title " style="color:snow; ">
+                                                Yu-Gi-Oh! Card Series :: Dark Magician
+                                            </h3>
+                                        </div>
+                                        <div class="post-share-buttons post-share-buttons-top ">
+                                            <div class="byline post-share-buttons goog-inline-block ">
+                                                <div class="post-body entry-content float-container " id="post-body-1870376863084091770 ">
+                                                    <script>
+                                                        function ToggleReadmore(id, id2) {
+                                                            var ele = document.getElementById(id);
+                                                            var btnText = document.getElementById(id2);
+                                                            const arrClass = ele.classList.toString().split(' ');
+                                                            console.log(arrClass);
+                                                            if (arrClass.findIndex(v => v === 'short_text') > 0) {
+                                                                ele.classList.remove("short_text ");
+                                                                btnText.innerHTML = "ซ&#3656;อน ";
+
+                                                            } else {
+                                                                ele.classList.add("short_text ");
+                                                                btnText.innerHTML = "แสดง ";
+                                                            }
+                                                        }
+                                                    </script>
+                                                    <!--Header-->
+                                                    <div class="separator " style="clear: both; ">
+                                                        <img alt=" " border="0 " class="imgBar " data-original-height="332 " data-original-width="900 " src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3gfSTUkn3QZyicOd6msYHtqqMhwmtx-ePGcTHmjw89n6OQZs5jOeAktxPkhXbO-tkVhNEjHhnLm58UrTKH8huYZhvoCIwuAehuIkNJF6ML32FhqwGMqGGm97uvuIaKKQNxDMmyMVV5DKQ9jqU_R-M2oEm-fdCtFaHZIIsUkdEh6ZgC_9XY1tBDwCN/s1600/DarkMagician.png "
+                                                            width="100% ">
+                                                    </div>
+                                                    <p style="text-align: center; "></p>
+                                                    <blockquote><span style="color: #b4a7d6; ">"ฉันขอใช้การ์ดเวทมนตร์จากบนมือ [ฟิวชั่น] ทำงาน!!! ฟิวชั่น [<span style="text-align: left;">แบล็ค เมจิกเชี่ยน</span>] บนมือและ [<span style="text-align: left;">แบล็ค เมจิกเชี่ยน เกิร์ล</span>]
+                                                        ของฉัน... ศิษย์อาจารย์ผู้อยู่จุดสูงสุดแห่งศาสตร์มืด เหล่าจอมเวทย์ผู้มีพลังของมนตร์ดำอันกล้าแกร่งที่สุด... อัญเชิญฟิวชั่น [
+                                                        <span style="text-align: left;">สุดยอดเหล่าจอมเวทย์ - แบล็ค เมจิกเชี่ยน</span>]"</span>
+                                                    </blockquote>
+                                                    <p></p>
+                                                    <p style="text-align: center;"><span style="color: rgb(255, 137, 137);">การรวมพลังของศิษย์อาจารย์กำเนิดเป็นการ์ดใบใหม่ มอนสเตอร์ตัวนี้ ดูเผินๆ แล้ว ก็ไม่ต่างกันจาก [แบล็ค เมจิกเชี่ยน] และ [แบล็ค เมจิกเชี่ยน เกิร์ล] สักเท่าไร แต่ว่า...เอฟเฟ็คจั่วการ์ดเวทย์มาใช้ได้ทันที ควบคุมเด็คได้เหมือนแขนขาตัวเอง
+                                                    พลิกแพลงสถานการณ์ให้เป็นไปดั่งใจนึก! สมแล้วจริงๆคุณยูกิ สมแล้วที่เป็นถึงดูเอลคิง</span></p>
+                                                    <br>
+                                                    <br>
+
+                                                    <!--Normal Monster Bar-->
+                                                    <section id="Normal_Monster">
+                                                        <p class="separator" style="clear: both; text-align: center;">
+                                                            <img alt="" border="0" class="imgBar" src="https://blogger.googleusercontent.com/img/a/AVvXsEh9eoTmhDAX_bOtAiZ5t-lqhwb0tHlBH6vb0CJUrvD-6e2NmRS7LPc9fLT3UKGBjEEk2xVMD9tz-6T2kRk-khRlcnpm0RUzaHY4YRkg-eWl-a8rxjGe9i-oijS0o0IsLMwmBTYXCAwrwvYZgMLvKLYKhB4YVLJMSrdbqPJyTKomS88xY5d2DUoyWQyK"
+                                                                width="100%">
+                                                            <img alt="" border="0" class="imgBarMobile" src="https://blogger.googleusercontent.com/img/a/AVvXsEh9eoTmhDAX_bOtAiZ5t-lqhwb0tHlBH6vb0CJUrvD-6e2NmRS7LPc9fLT3UKGBjEEk2xVMD9tz-6T2kRk-khRlcnpm0RUzaHY4YRkg-eWl-a8rxjGe9i-oijS0o0IsLMwmBTYXCAwrwvYZgMLvKLYKhB4YVLJMSrdbqPJyTKomS88xY5d2DUoyWQyK"
+                                                                style="margin-left: auto; margin-right: auto; min-height: 50px; object-fit: cover; width: 100%;">
+                                                        </p>
+                                                    </section>
+                                                    <span>
+                                            </div>
+                                        </div>
+                                    </div>
+          
+              <div class="row">
+            <div class="columnCard">
+              <div class="imgCard" >
+                <img border="0" data-original-height="614" data-original-width="421" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7EN7rNq-uWY3gaiiw0367p4UDqzLQD4liq_3pVwc4_ZnNBT1mF9PLCzWg_gMo52GpL8eRVQKw_XFZSCrhv8zXnjVcwEU4mjAt9M_zR__oUcUL9QDZ0FcmecOpENP000OzqdLY7iwRvn9ej9m8A2sk_6F4GIBnruApY7Xlz07IuAiCbhwZCuAYTOjH/s1600/Dark%20Magician.jpg">
+              </div>
+            </div>
+        
+            <div class="columnInfo">
+        <!--Name-->
+              <div class="cardName">
+                <b><span style="color: #8e7cc3; font-size: 150%; padding: 0px 2px 2px;">Dark Magician</span></b>
+                                                    <br>(แบล็ค เมจิกเชี่ยน)
+                                                </div>
+                                                <div style="padding: 5px;"></div>
+
+                                                <div class="cardInfo">
+                                                    <b> เลเวล:</b>&nbsp;7&nbsp;
+                                                    <img alt="Level" src="https://images2.wikia.nocookie.net/__cb20120918052838/yugioh/images/thumb/e/e3/CG_Star.svg/18px-CG_Star.svg.png" style="vertical-align: middle; width: 4%;"> /
+                                                    <b> ธาตุ:</b> มืด
+                                                    <img alt="DARK - มืด" src="https://images2.wikia.nocookie.net/__cb20120918053850/yugioh/images/thumb/d/de/DARK.svg/24px-DARK.svg.png" style="vertical-align: middle; width: 4%;"> /
+                                                    <b>&nbsp;เผ่าพันธุ์: </b>จอมเวทย์<br>
+                                                    <b>พลังโจมตี:</b>&nbsp;2500 / <b>พลังป้องกัน:</b>&nbsp;2100
+                                                </div>
+                                                <div style="padding: 5px;"></div>
+
+                                                <!--FlavorText-->
+                                                <div class="cardEffect">
+                                                    <div style="font-size: 110%; text-align: center;">
+                                                        <b style="color: #ffe599;">เรื่องราวของการ์ด</b>
+                                                    </div>
+                                                    <div class="cardEffect">&nbsp;&nbsp;&nbsp;สุดยอดจอมเวทย์ผู้ทรงพลัง ทั้งในทางด้านการโจมตีและป้องกัน
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        </span>
+
+
+
+                                        <!--Effect Monster Bar-->
+                                        <section id="Effect_Monster">
+                                            <p class="separator" style="clear: both; text-align: center;">
+                                                <img alt="" border="0" class="imgBar" src="https://blogger.googleusercontent.com/img/a/AVvXsEhIrGmIxIm1b6-9yTGNghiTz2AlTqmtNRtTEdLQlVrO96lGBJf69na7iCaIcTpsc6q0WZsJ0BqdeLgNuAR7vP8jTlZgJuIWUoYt8N3yp89D-TSboNLWGGYAflEsdGschm_ZQp-Is1MAEkftB8LLGgnQbfdAjeGI6Keu5f9TN0DuiINa49qgPd7i6wrZ"
+                                                    width="100%">
+                                                <img alt="" border="0" class="imgBarMobile" src="https://blogger.googleusercontent.com/img/a/AVvXsEhIrGmIxIm1b6-9yTGNghiTz2AlTqmtNRtTEdLQlVrO96lGBJf69na7iCaIcTpsc6q0WZsJ0BqdeLgNuAR7vP8jTlZgJuIWUoYt8N3yp89D-TSboNLWGGYAflEsdGschm_ZQp-Is1MAEkftB8LLGgnQbfdAjeGI6Keu5f9TN0DuiINa49qgPd7i6wrZ"
+                                                    style="margin-left: auto; margin-right: auto; min-height: 50px; object-fit: cover; width: 100%;">
+                                            </p>
+                                            <span>
+        
+            <!--Dark--><span>
+              
+                <div class="row">
+            <div class="columnCard">
+              <div class="imgCard" style="clear: both; text-align: center;">
+                <img border="0" data-original-height="614" data-original-width="421" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkB9pAaZPzLwOaq-nmSsD3M2RyYI0LxNpibSVLHhpNrFj1oE3IaUNqFJJS9T-U1yBHX0y7lsXeVCXsBAqLUthBnTnk5RPbWnNQ4AP6FbZSeWXBn6Rs6pG4zeIlc3Z0V6yCepDSFScPpNcR3F-N0faYN-5fuM0ftK9cDXTdI5W5XbpIlpAIfFoZ78Jk/s1600/Magicians%27%20Souls.jpg">
+              </div>
+            </div>
+        
+            <div class="columnInfo">
+        <!--Name-->
+              <div class="cardName">
+                <b><span style="color: #8e7cc3; font-size: 150%; padding: 0px 2px 2px;">Magicians' Souls</span></b>
+                                            <br>(เมจิกเชี่ยน โซล)
+                                    </div>
+                                    <div style="padding: 5px;"></div>
+
+                                    <div class="cardInfo">
+                                        <b> เลเวล:</b>&nbsp;1&nbsp;
+                                        <img alt="Level" src="https://images2.wikia.nocookie.net/__cb20120918052838/yugioh/images/thumb/e/e3/CG_Star.svg/18px-CG_Star.svg.png" style="vertical-align: middle; width: 4%;"> /
+                                        <b> ธาตุ:</b> มืด
+                                        <img alt="DARK - มืด" src="https://images2.wikia.nocookie.net/__cb20120918053850/yugioh/images/thumb/d/de/DARK.svg/24px-DARK.svg.png" style="vertical-align: middle; width: 4%;"> /
+                                        <b>&nbsp;เผ่าพันธุ์: </b>จอมเวทย์<br>
+                                        <b>พลังโจมตี:</b>&nbsp;0 / <b>พลังป้องกัน:</b>&nbsp;0
+                                    </div>
+                                    <div style="padding: 5px;"></div>
+
+                                    <!--MonsterEffect-->
+                                    <div class="cardEffect">
+                                        <div style="font-size: 110%; text-align: center;">
+                                            <b style="color: #ea9999;">เอฟเฟ็คมอนสเตอร์</b>
+                                        </div>
+                                        <div class="cardEffect short_text" id="em15">&nbsp;&nbsp;&nbsp;คุณสามารถเลือกการ์ดเวทมนตร์/กับดักจากบนมือหรือบนสนามของคุณสูงสุด 2 ใบส่งลงสุสาน จากนั้น จั่วการ์ดตามจำนวนการ์ดที่ถูกส่งลงสุสานด้วยเอฟเฟ็คนี้ทันที เมื่อการ์ดใบนี้อยู่บนมือของคุณ คุณสามารถเลือกการ์ดมอนสเตอร์เผ่าจอมเวทย์เลเวล
+                                            6 ขึ้นไปจากในเด็คของคุณ 1 ใบส่งลงสุสาน จากนั้น เลือกใช้เอฟเฟ็คอย่างใดอย่างหนึ่งต่อไปนี้ดังนี้
+                                            <br>
+                                            <br>● อัญเชิญพิเศษการ์ดใบนี้ทันที
+                                            <br>● ส่งการ์ดใบนี้ลงสุสาน จากนั้น อัญฌชิญพิเศษ "Dark Magician" หรือ "Dark Magician Girl" จากในสุสานของคุณ 1 ใบทันที
+                                            <br>
+                                            <br>&nbsp;&nbsp;&nbsp;คุณสามารถใช้เอฟเฟ็คแต่ละอย่างของ "Magicians' Souls" ได้เทิร์นละครั้งเท่านั้น
+                                        </div>
+                                        <div style="text-align: center;">
+                                            <button class="button" id="myBtnEm15" onclick="ToggleReadmore('em15','myBtnEm15')">แสดง</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                        </div>
+                        <br>
+
+                        <div class="row">
+                            <div class="columnCard">
+                                <div class="imgCard" style="clear: both; text-align: center;">
+                                    <img border="0" data-original-height="614" data-original-width="421" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtHnZoQzLq1KKMF3Y7TNQr3XP9U1hEMhOjyVK06QUMsWvL3mqmlX6z9-dGDypE_2YZ1VhvUFlmGGO6j5SRxVgqION2QlwoE-RVYOLY6ks1haNQkDdE5Jkdrl4jI6rclhI59MXfa2Qj1csfKXZkO6h8uJQjYGNgBgkLiaQKU3IojvTgF3UEL8UBOeka/s1600/Magikuriboh.jpg">
+                                </div>
+                            </div>
+
+                            <div class="columnInfo">
+                                <!--Name-->
+                                <div class="cardName">
+                                    <b><span style="color: #8e7cc3; font-size: 150%; padding: 0px 2px 2px;">Magikuriboh</span></b>
+                                    <br>(เมจิกคุริโบ้)
+                                </div>
+                                <div style="padding: 5px;"></div>
+
+                                <div class="cardInfo">
+                                    <b> เลเวล:</b>&nbsp;1&nbsp;
+                                    <img alt="Level" src="https://images2.wikia.nocookie.net/__cb20120918052838/yugioh/images/thumb/e/e3/CG_Star.svg/18px-CG_Star.svg.png" style="vertical-align: middle; width: 4%;"> /
+                                    <b> ธาตุ:</b> มืด
+                                    <img alt="DARK - มืด" src="https://images2.wikia.nocookie.net/__cb20120918053850/yugioh/images/thumb/d/de/DARK.svg/24px-DARK.svg.png" style="vertical-align: middle; width: 4%;"> /
+                                    <b>&nbsp;เผ่าพันธุ์: </b>ปีศาจ<br>
+                                    <b>พลังโจมตี:</b>&nbsp;300 / <b>พลังป้องกัน:</b>&nbsp;200
+                                </div>
+                                <div style="padding: 5px;"></div>
+
+                                <!--MonsterEffect-->
+                                <div class="cardEffect">
+                                    <div style="font-size: 110%; text-align: center;">
+                                        <b style="color: #ea9999;">เอฟเฟ็คมอนสเตอร์</b>
+                                    </div>
+                                    <div class="cardEffect short_text" id="em14">&nbsp;&nbsp;&nbsp;ในช่วง Main Phase หรือ Battle Phase ถ้าคุณได้รับความเสียหายจากการต่อสู้หรือเอฟเฟ็คการ์ดอีกฝ่าย คุณสามารถส่งการ์ดใบนี้จากบนมือของคุณลงสุสาน จากนั้น อัญเชิญพิเศษ "Dark Magician" หรือ "Dark Magician Girl"
+                                        จากในเด็คหรือในสุสานของคุณ 1 ใบทันที(เป็น Quick Effect) เมื่อมอนสเตอร์เผ่าจอมเวทย์ที่หงายหน้าอยู่บนสนามของคุณถูกทำลายจากการต่อสู้หรือเอฟเฟ็คการ์ดอีกฝ่าย คุณสามารถนำการ์ดใบนี้จากในสุสานของคุณเพิ่มขึ้นมือได้ทันที
+                                        คุณสามารถใช้เอฟเฟ็คแต่ละอย่างของ "Magikuriboh" ได้เทิร์นละครั้งเท่านั้น
+                                    </div>
+                                    <div style="text-align: center;">
+                                        <button class="button" id="myBtnEm14" onclick="ToggleReadmore('em14','myBtnEm14')">แสดง</button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <br>
+
+                        <div class="row">
+                            <div class="columnCard">
+                                <div class="imgCard" style="clear: both; text-align: center;">
+                                    <img border="0" data-original-height="614" data-original-width="421" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTGl0r33nR2DFsiPedlThwjiFkitmoiAitWh4H7rI_ytGF3eKko-PDYzPSoDotV5miaN0fvqTw8vI0WNpJxbS4lYDimR8DpnU-d6YnYn-7aywV5MlsYA7lf246Yvy7nbU1oKpSBOu4cPBUAu6n5j6sS0ax1LahMONuk7dORYmUMCmyEfAtDhwlpJ7q/s1600/Magician%27s%20Robe.jpg">
+                                </div>
+                            </div>
+
+                            <div class="columnInfo">
+                                <!--Name-->
+                                <div class="cardName">
+                                    <b><span style="color: #8e7cc3; font-size: 150%; padding: 0px 2px 2px;">Magician's Robe</span></b>
+                                    <br>(มาจิกเชี่ยน โร๊บ)
+                                </div>
+                                <div style="padding: 5px;"></div>
+
+                                <div class="cardInfo">
+                                    <b> เลเวล:</b>&nbsp;2&nbsp;
+                                    <img alt="Level" src="https://images2.wikia.nocookie.net/__cb20120918052838/yugioh/images/thumb/e/e3/CG_Star.svg/18px-CG_Star.svg.png" style="vertical-align: middle; width: 4%;"> /
+                                    <b> ธาตุ:</b> มืด
+                                    <img alt="DARK - มืด" src="https://images2.wikia.nocookie.net/__cb20120918053850/yugioh/images/thumb/d/de/DARK.svg/24px-DARK.svg.png" style="vertical-align: middle; width: 4%;"> /
+                                    <b>&nbsp;เผ่าพันธุ์: </b>จอมเวทย์<br>
+                                    <b>พลังโจมตี:</b>&nbsp;700 / <b>พลังป้องกัน:</b>&nbsp;2000
+                                </div>
+                                <div style="padding: 5px;"></div>
+
+                                <!--MonsterEffect-->
+                                <div class="cardEffect">
+                                    <div style="font-size: 110%; text-align: center;">
+                                        <b style="color: #ea9999;">เอฟเฟ็คมอนสเตอร์</b>
+                                    </div>
+                                    <div class="cardEffect short_text" id="em13">&nbsp;&nbsp;&nbsp;ในระหว่างเทิร์นของอีกฝ่าย คุณสามารถทิ้งการ์ดเวทมนตร์/กับดัก 1 ใบ จากนั้น อัญเชิญพิเศษ "Dark Magician" จากในเด็คของคุณ 1 ใบทันที(เป็น Quick Effect) ในระหว่างเทิร์นของอีกฝ่าย ถ้าคุณเปิดใช้หรือใช้งานเอฟเฟ็คการ์ดในขณะที่การ์ดใบนี้อยู่ในสุสานของคุณ(ยกเว้นในช่วงความเสียหาย)
+                                        คุณสามารถอัญเชิญพิเศษการ์ดใบนี้ได้ทันที แต่มันจะถูกนำออกนอกเมื่อมันออกจากสนาม คุณสามารถใช้เอฟเฟ็คแต่ละอย่างของ "Magician' Robe" ได้เทิร์นละครั้งเท่านั้น
+                                    </div>
+                                    <div style="text-align: center;">
+                                        <button class="button" id="myBtnEm13" onclick="ToggleReadmore('em13','myBtnEm13')">แสดง</button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="columnCard">
+                                <div class="imgCard" style="clear: both; text-align: center;">
+                                    <img border="0" data-original-height="614" data-original-width="421" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg5aWttXyG6VVrNoG2B78UbHE_zb4gd0I7xoeJnRLP1V3hgMJTx57QtWek8nC4_0vqCMIQWAKmZD1Bz7ns_mZdgP7FQcbsiOZoED5dxhS1KGyyo2n4veSN_nGi8LPWHHlWFZdjJa1_kJM6qoMv9SoaF2Fo3zOw7jNJZCm7As8Xj1kaVprvuP_6BDqXN/s1600/Magician%27s%20Rod.jpg">
+                                </div>
+                            </div>
+
+                            <div class="columnInfo">
+                                <!--Name-->
+                                <div class="cardName">
+                                    <b><span style="color: #8e7cc3; font-size: 150%; padding: 0px 2px 2px;">Magician's Rod</span></b>
+                                    <br>(เมจิกเชี่ยน ร็อด)
+                                </div>
+                                <div style="padding: 5px;"></div>
+
+                                <div class="cardInfo">
+                                    <b> เลเวล:</b>&nbsp;3&nbsp;
+                                    <img alt="Level" src="https://images2.wikia.nocookie.net/__cb20120918052838/yugioh/images/thumb/e/e3/CG_Star.svg/18px-CG_Star.svg.png" style="vertical-align: middle; width: 4%;"> /
+                                    <b> ธาตุ:</b> มืด
+                                    <img alt="DARK - มืด" src="https://images2.wikia.nocookie.net/__cb20120918053850/yugioh/images/thumb/d/de/DARK.svg/24px-DARK.svg.png" style="vertical-align: middle; width: 4%;"> /
+                                    <b>&nbsp;เผ่าพันธุ์: </b>จอมเวทย์<br>
+                                    <b>พลังโจมตี:</b>&nbsp;1600 / <b>พลังป้องกัน:</b>&nbsp;100
+                                </div>
+                                <div style="padding: 5px;"></div>
+
+                                <!--MonsterEffect-->
+                                <div class="cardEffect">
+                                    <div style="font-size: 110%; text-align: center;">
+                                        <b style="color: #ea9999;">เอฟเฟ็คมอนสเตอร์</b>
+                                    </div>
+                                    <div class="cardEffect short_text" id="em12">&nbsp;&nbsp;&nbsp;เมื่อการ์ดใบนี้ถูกอัญเชิญปกติสำเร็จ คุณสามารถเลือกการ์ดเวทมนตร์/กับดักที่มีการระบุถึง "Dark Magician" ในคำอธิบายจากในเด็คของคุณ 1 ใบเพิ่มขึ้นมือทันที ในระหว่างเทิร์นของอีกฝ่าย ถ้าคุณเปิดใช้หรือใช้งานเอฟเฟ็คการ์ดในขณะที่การ์ดใบนี้อยู่ในสุสานของคุณ(ยกเว้นในช่วงความเสียหาย)
+                                        คุณสามารถสังเวยมอนสเตอร์เผ่าจอมเวทย์ 1 ใบ จากนั้น นำการ์ดใบนี้เพิ่มขึ้นมือทันที คุณสามารถใช้เอฟเฟ็คแต่ละอย่างของ "Magician's Rod" ได้เทิร์นละครั้งเท่านั้น
+                                    </div>
+                                    <div style="text-align: center;">
+                                        <button class="button" id="myBtnEm12" onclick="ToggleReadmore('em12','myBtnEm12')">แสดง</button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="columnCard">
+                                <div class="imgCard" style="clear: both; text-align: center;">
+                                    <img border="0" data-original-height="614" data-original-width="421" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj31CzkSqB5oxSz4BEhsp7336a0sALtrsVg_Qvpo0cX_ZeG-TtN37odE0alNFDtCvfayScJu5Ke3tUcY_nQzcwEQMe_rwekfkLVQCvbIReJxtT8r3u2PpcCclmrcLL1ivJKbd4YSnqozXfldDNlYQwIj8u9xXRwmmcNLCWGW1NQfg5r-H6IKibdIb3b/s1600/Apprentice%20Illusion%20Magician.jpg">
+                                </div>
+                            </div>
+
+                            <div class="columnInfo">
+                                <!--Name-->
+                                <div class="cardName">
+                                    <b><span style="color: #8e7cc3; font-size: 150%; padding: 0px 2px 2px;">Apprentice Illusion Magician</span></b>
+                                    <br>(จอมเวทย์มายาฝึกหัด)
+                                </div>
+                                <div style="padding: 5px;"></div>
+
+                                <div class="cardInfo">
+                                    <b> เลเวล:</b>&nbsp;6&nbsp;
+                                    <img alt="Level" src="https://images2.wikia.nocookie.net/__cb20120918052838/yugioh/images/thumb/e/e3/CG_Star.svg/18px-CG_Star.svg.png" style="vertical-align: middle; width: 4%;"> /
+                                    <b> ธาตุ:</b> มืด
+                                    <img alt="DARK - มืด" src="https://images2.wikia.nocookie.net/__cb20120918053850/yugioh/images/thumb/d/de/DARK.svg/24px-DARK.svg.png" style="vertical-align: middle; width: 4%;"> /
+                                    <b>&nbsp;เผ่าพันธุ์: </b>จอมเวทย์<br>
+                                    <b>พลังโจมตี:</b>&nbsp;2000 / <b>พลังป้องกัน:</b>&nbsp;1700
+                                </div>
+                                <div style="padding: 5px;"></div>
+
+                                <!--MonsterEffect-->
+                                <div class="cardEffect">
+                                    <div style="font-size: 110%; text-align: center;">
+                                        <b style="color: #ea9999;">เอฟเฟ็คมอนสเตอร์</b>
+                                    </div>
+                                    <div class="cardEffect short_text" id="em8">&nbsp;&nbsp;&nbsp;คุณสามารถอัญเชิญพิเศษการ์ดใบนี้จากบนมือได้โดยการทิ้งการ์ด 1 ใบ เมื่อการ์ดใบนี้ถูกอัญเชิญปกติหรือพิเศษสำเร็จ คุณสามารถเลือก "Dark Magician" จากในเด้คของคุณ 1 ใบเพิ่มขึ้นมือได้ทันที ในระหว่างคำนวณความเสียหาย
+                                        ถ้ามีมอนสเตอร์เผ่าจอมเวทย์ธาตุมือใบอื่นบนสนามของคุณทำการต่อสู้กับมอนสเตอร์อีกฝ่าย คุณสามารถส่งการ์ดใบนี้จากบนมือหรือที่หงายหน้าบนสนามของคุณลงสุสาน จากนั้น มอนสเตอร์ใบนั้นของคุณจะได้รับพลังโจมตี/ป้องกันเพิ่มขึ้น
+                                        2000 ทันทีเฉพาะในช่วงความเสียหายเท่านั้น(เป็น Quick Effect)
+                                    </div>
+                                    <div style="text-align: center;">
+                                        <button class="button" id="myBtnEm8" onclick="ToggleReadmore('em8','myBtnEm8')">แสดง</button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="columnCard">
+                                <div class="imgCard" style="clear: both; text-align: center;">
+                                    <img border="0" data-original-height="614" data-original-width="421" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEglNCXQv6ZAKMW_wvJ6UhgLjV8otdhTVq6Ft8pWjCmhcnWrB2chqIWOD_z8QBUJ1CeauQ62gwmYnP_z7xbsjKOOKws0h-G9q_240V4l69H_aFB9U0NdTBSh8gO5r9-3ClEe1lqOXbMsVFZ-f5BjvxLk0Qzu9LpSkY9p3CxH002kC0fL5oiwnZ5eIjDi/s1600/Dark%20Magician%20Girl.jpg">
+                                </div>
+                            </div>
+
+                            <div class="columnInfo">
+                                <!--Name-->
+                                <div class="cardName">
+                                    <b><span style="color: #8e7cc3; font-size: 150%; padding: 0px 2px 2px;">Dark Magician Girl</span></b>
+                                    <br>(แบล็ค เมจิกเชี่ยน เกิร์ล)
+                                </div>
+                                <div style="padding: 5px;"></div>
+
+                                <div class="cardInfo">
+                                    <b> เลเวล:</b>&nbsp;6&nbsp;
+                                    <img alt="Level" src="https://images2.wikia.nocookie.net/__cb20120918052838/yugioh/images/thumb/e/e3/CG_Star.svg/18px-CG_Star.svg.png" style="vertical-align: middle; width: 4%;"> /
+                                    <b> ธาตุ:</b> มืด
+                                    <img alt="DARK - มืด" src="https://images2.wikia.nocookie.net/__cb20120918053850/yugioh/images/thumb/d/de/DARK.svg/24px-DARK.svg.png" style="vertical-align: middle; width: 4%;"> /
+                                    <b>&nbsp;เผ่าพันธุ์: </b>จอมเวทย์<br>
+                                    <b>พลังโจมตี:</b>&nbsp;2000 / <b>พลังป้องกัน:</b>&nbsp;1700
+                                </div>
+                                <div style="padding: 5px;"></div>
+
+                                <!--MonsterEffect-->
+                                <div class="cardEffect">
+                                    <div style="font-size: 110%; text-align: center;">
+                                        <b style="color: #ea9999;">เอฟเฟ็คมอนสเตอร์</b>
+                                    </div>
+                                    <div class="cardEffect">&nbsp;&nbsp;&nbsp;การ์ดใบนี้จะได้รับพลังโจมตีเพิ่มขึ้น 300 x จำนวน "Dark Magician" และ "Magician of Black Chaos" ในสุสานทั้งหมด
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="columnCard">
+                                <div class="imgCard" style="clear: both; text-align: center;">
+                                    <img border="0" data-original-height="614" data-original-width="421" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgfZDVqREUIrcRG6_uUl8PiRrkrr_BnyyVTBmQ2UM3q31cyQodYxIp9vPDuwv0Chbz1p2TepXXn7qYERpDSZyyea01ykeXyljs4zaUxu9SJrv2w-FIHxl6uqIPGqU_nLNsFCiSxUIgqzs77RifhmULdtzBr2vBLhjlKd3QEV4u6GLD6Dud7zdrioKTy/s1600/Magician%20of%20Dark%20Illusion.jpg">
+                                </div>
+                            </div>
+
+                            <div class="columnInfo">
+                                <!--Name-->
+                                <div class="cardName">
+                                    <b><span style="color: #8e7cc3; font-size: 150%; padding: 0px 2px 2px;">Magician of Dark Illusion</span></b>
+                                    <br>(จอมเวทย์มายาทมิฬ)
+                                </div>
+                                <div style="padding: 5px;"></div>
+
+                                <div class="cardInfo">
+                                    <b> เลเวล:</b>&nbsp;7&nbsp;
+                                    <img alt="Level" src="https://images2.wikia.nocookie.net/__cb20120918052838/yugioh/images/thumb/e/e3/CG_Star.svg/18px-CG_Star.svg.png" style="vertical-align: middle; width: 4%;"> /
+                                    <b> ธาตุ:</b> มืด
+                                    <img alt="DARK - มืด" src="https://images2.wikia.nocookie.net/__cb20120918053850/yugioh/images/thumb/d/de/DARK.svg/24px-DARK.svg.png" style="vertical-align: middle; width: 4%;"> /
+                                    <b>&nbsp;เผ่าพันธุ์: </b>จอมเวทย์<br>
+                                    <b>พลังโจมตี:</b>&nbsp;2100 / <b>พลังป้องกัน:</b>&nbsp;2500
+                                </div>
+                                <div style="padding: 5px;"></div>
+
+                                <!--MonsterEffect-->
+                                <div class="cardEffect">
+                                    <div style="font-size: 110%; text-align: center;">
+                                        <b style="color: #ea9999;">เอฟเฟ็คมอนสเตอร์</b>
+                                    </div>
+                                    <div class="cardEffect short_text" id="em7">&nbsp;&nbsp;&nbsp;การ์ดใบนี้จะถือว่ามันมีชื่อว่า "Dark Magician" เมื่อมันอยู่บนสนาม คุณสามารถใช้เอฟเฟ็คแต่ละอย่างต่อไปนี้ของ "Dark Magician" ได้เทิร์นละครั้งเท่านั้นดังนี้
+                                        <br>
+                                        <br>● ในระหว่างเทิร์นของอีกฝ่าย ถ้าคุณใช้งานเอฟเฟ็คการ์ด(ยกเว้นในช่วงความเสียหาย) คุณสามารถอัญเชิญพิเศษการ์ดใบนี้จากบนมือของคุณได้ทันที
+                                        <br>● เมื่ออีกฝ่ายใช้งานเอฟเฟ็คการ์ดในขณะที่การ์ดใบนี้หงายหน้าอยู่บนสนามของคุณ(ยกเว้นในช่วงความเสียหาย) คุณสามารถอัญเชิญพิเศษ "Dark Magician" จากในสุสานของคุณ 1 ใบทันที เอฟเฟ็คนี้สามารถใช้ได้ครั้งเดียวต่อการหงายหน้าอยู่บนสนามของการ์ดนี้
+                                    </div>
+                                    <div style="text-align: center;">
+                                        <button class="button" id="myBtnEm7" onclick="ToggleReadmore('em7','myBtnEm7')">แสดง</button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="columnCard">
+                                <div class="imgCard" style="clear: both; text-align: center;">
+                                    <img border="0" data-original-height="614" data-original-width="421" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6aQQ9ZKehjNRaV6WqG-qaz92EoJZa0K0ZsbrcOmsJ8aMvVnf0HYJgXHj6izjOAw16qFg9ryOwvxdk1tVbQbDCLqMaeyr3yhmNohtoUJo3abng3F2ydMZUqLTaFEsd1tnwIdfOx4WmQ4MkT7iVARkeiFfR-jLDmPhPWlXLFbhyJeS83PeYFW2nD2YC/s1600/Dark%20Magician%20of%20Chaos.jpg">
+                                </div>
+                            </div>
+
+                            <div class="columnInfo">
+                                <!--Name-->
+                                <div class="cardName">
+                                    <b><span style="color: #8e7cc3; font-size: 150%; padding: 0px 2px 2px;">Dark Magician of Chaos</span></b>
+                                    <br>(จอมเวทมนตร์ดำแห่งความโกลาหล)
+                                </div>
+                                <div style="padding: 5px;"></div>
+
+                                <div class="cardInfo">
+                                    <b> เลเวล:</b>&nbsp;8&nbsp;
+                                    <img alt="Level" src="https://images2.wikia.nocookie.net/__cb20120918052838/yugioh/images/thumb/e/e3/CG_Star.svg/18px-CG_Star.svg.png" style="vertical-align: middle; width: 4%;"> /
+                                    <b> ธาตุ:</b> มืด
+                                    <img alt="DARK - มืด" src="https://images2.wikia.nocookie.net/__cb20120918053850/yugioh/images/thumb/d/de/DARK.svg/24px-DARK.svg.png" style="vertical-align: middle; width: 4%;"> /
+                                    <b>&nbsp;เผ่าพันธุ์: </b>จอมเวทย์<br>
+                                    <b>พลังโจมตี:</b>&nbsp;2800 / <b>พลังป้องกัน:</b>&nbsp;2600
+                                </div>
+                                <div style="padding: 5px;"></div>
+
+                                <!--MonsterEffect-->
+                                <div class="cardEffect">
+                                    <div style="font-size: 110%; text-align: center;">
+                                        <b style="color: #ea9999;">เอฟเฟ็คมอนสเตอร์</b>
+                                    </div>
+                                    <div class="cardEffect short_text" id="em6">&nbsp;&nbsp;&nbsp;ในช่วง End Phase ของเทิร์นที่การ์ดใบนี้ถูกอัญเชิญปกติหรือพิเศษสำเร็จ คุณสามารถเลือกการ์ดเวทมนตร์จากในสุสานของคุณ 1 ใบเพิ่มขึ้นมือทันที คุณสามารถใช้เอฟเฟ็คนี้ของ "Dark Magician of Chaos" ได้เทิร์นละครั้งเท่านั้น
+                                        เมื่อการ์ดใบนี้ทำลายมอนสเตอร์อีกฝ่ายจากการต่อสู้สำเร็จ หลังคำนวณความเสียหาย นำมอนสเตอร์ใบนั้นออกนอกเกมทันที เมื่อการ์ดใบนี้ออกจากสนามในสภาพหงายหน้า นำมันออกนอกเกมทันที
+                                    </div>
+                                    <div style="text-align: center;">
+                                        <button class="button" id="myBtnEm6" onclick="ToggleReadmore('em6','myBtnEm6')">แสดง</button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <br>
+
+                        <div class="row">
+                            <div class="columnCard">
+                                <div class="imgCard" style="clear: both; text-align: center;">
+                                    <img border="0" data-original-height="614" data-original-width="421" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEheo-eIinYUOd9ENHzcOnUloKx46jOoc4orcfuwz-oQOjP99Yv4-5gSsInXM1KDpA10QENwZKhB-5B5EOuNTEkkllqjiTHgP83FpjvxTapSfVLU9PGYAdwrruqYTScy5sHNienggSDnKO-DAic3XUmShkTkMGMMj9-VN_9j2MIjskib2EzYEBtiPFBR/s1600/Dark%20Sage.jpg">
+                                </div>
+                            </div>
+
+                            <div class="columnInfo">
+                                <!--Name-->
+                                <div class="cardName">
+                                    <b><span style="color: #8e7cc3; font-size: 150%; padding: 0px 2px 2px;">Dark Sage</span></b>
+                                    <br>(ปราชญ์อาภรณ์ทมิฬผู้ยิ่งใหญ่)
+                                </div>
+                                <div style="padding: 5px;"></div>
+
+                                <div class="cardInfo">
+                                    <b> เลเวล:</b>&nbsp;9&nbsp;
+                                    <img alt="Level" src="https://images2.wikia.nocookie.net/__cb20120918052838/yugioh/images/thumb/e/e3/CG_Star.svg/18px-CG_Star.svg.png" style="vertical-align: middle; width: 4%;"> /
+                                    <b> ธาตุ:</b> มืด
+                                    <img alt="DARK - มืด" src="https://images2.wikia.nocookie.net/__cb20120918053850/yugioh/images/thumb/d/de/DARK.svg/24px-DARK.svg.png" style="vertical-align: middle; width: 4%;"> /
+                                    <b>&nbsp;เผ่าพันธุ์: </b>จอมเวทย์<br>
+                                    <b>พลังโจมตี:</b>&nbsp;2800 / <b>พลังป้องกัน:</b>&nbsp;3200
+                                </div>
+                                <div style="padding: 5px;"></div>
+
+                                <!--MonsterEffect-->
+                                <div class="cardEffect">
+                                    <div style="font-size: 110%; text-align: center;">
+                                        <b style="color: #ea9999;">เอฟเฟ็คมอนสเตอร์</b>
+                                    </div>
+                                    <div class="cardEffect short_text" id="em5">&nbsp;&nbsp;&nbsp;การ์ดใบนี้ไม่สามารถอัญเชิญปกติ/เซ็ตคว่ำได้ ต้องอัญเชิญพิเศษครั้งแรกด้วยเอฟเฟ็คมันเองเท่านั้น หลังจากที่คุณในเอฟเฟ็คของ "Time Wizard" แล้วทายผลโยนเหรียญถูก คุณสามารถสังเวย "Dark Magician" 1 ใบ จากนั้น
+                                        อัญเชิญพิเศษการ์ดใบนี้จากบนมือหรือในเด็คของคุณทันที เมื่อการ์ดใบนี้ถูกอัญเชิญด้วยวิธีนี้สำเร็จ ทำการเลือกการ์ดเวทมนตร์จากในเด็คของคุณ 1 ใบเพิ่มขึ้นมือทันที
+                                    </div>
+                                    <div style="text-align: center;">
+                                        <button class="button" id="myBtnEm5" onclick="ToggleReadmore('em5','myBtnEm5')">แสดง</button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <br>
+
+                        </span>
+
+                        <div class="row">
+                            <div class="columnCard">
+                                <div class="imgCard" style="clear: both; text-align: center;">
+                                    <img border="0" data-original-height="614" data-original-width="421" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMqLcZAjkTHAYsyFYD90JrB4_4rqGuVzGsP6DfHdnmIeEfsZJ4BwUieiDXp6UkD-q4yu3XU6BNnATwZRILLCggjE0FMbTZadnafGOz7nQlwZPPTu0l_OlbEBhkaGy6NrsoLu0K-IIjMoOA0Bb_fUJCJWsckVJqOXkwY6bK15riXka9oI4ONxjw636Q/s1600/Palladium%20Oracle%20Mana.jpg">
+                                </div>
+                            </div>
+
+                            <div class="columnInfo">
+                                <!--Name-->
+                                <div class="cardName">
+                                    <b><span style="color: #fff2cc; font-size: 150%; padding: 0px 2px 2px;">Palladium Oracle Mana</span></b>
+                                    <br>(นักพรตผู้พิทักษ์ มานา)
+                                </div>
+                                <div style="padding: 5px;"></div>
+
+                                <div class="cardInfo">
+                                    <b> เลเวล:</b>&nbsp;6&nbsp;
+                                    <img alt="Level" src="https://images2.wikia.nocookie.net/__cb20120918052838/yugioh/images/thumb/e/e3/CG_Star.svg/18px-CG_Star.svg.png" style="vertical-align: middle; width: 4%;"> /
+                                    <b> ธาตุ:</b> แสง
+                                    <img alt="LIGHT - แสง" src="https://images1.wikia.nocookie.net/__cb20120918053834/yugioh/images/thumb/3/39/LIGHT.svg/24px-LIGHT.svg.png" style="vertical-align: middle; width: 4%;"> /
+                                    <b>&nbsp;เผ่าพันธุ์: </b>จอมเวทย์<br>
+                                    <b>พลังโจมตี:</b>&nbsp;2000 / <b>พลังป้องกัน:</b>&nbsp;1700
+                                </div>
+                                <div style="padding: 5px;"></div>
+
+                                <!--MonsterEffect-->
+                                <div class="cardEffect">
+                                    <div style="font-size: 110%; text-align: center;">
+                                        <b style="color: #ea9999;">เอฟเฟ็คมอนสเตอร์</b>
+                                    </div>
+                                    <div class="cardEffect short_text" id="em4">&nbsp;&nbsp;&nbsp;เมื่ออีกฝ่ายเปิดใช้หรือใช้งานเอฟเฟ็คการ์ดที่มีเป้าหมายเป็นมอนสเตอร์เผ่าจอมเวทย์บนสนามของคุณเพียง 1 ใบ(และไม่มีการ์ดใบอื่นร่วมด้วย) ในขณะที่การ์ดใบนี้อยู่บนมือหรือในสุสานของคุณ คุณสามารถอัญเชิญพิเศษการ์ดใบนี้ได้ทันที(เป็น
+                                        Quick Effect) คุณสามารถใช้เอฟเฟ็คนี้ของ "Palladium Oracle Mana" ได้เทิร์นละครั้งเท่านั้น มอนสเตอร์เผ่าจอมเวทย์เลเวล 7 ขึ้นไปบนสนามของคุณทั้งหมดจะไม่ถูกทำลายจากเอฟเฟ็คการ์ด เมื่อการ์ดใบนี้ถูกทำลายจากกรณีใดก็ตาม คุณสามารถอัญเชิญพิเศษ
+                                        "Dark Magician Girl" จากบนมือ, ในเด็ค หรือในสุสานของคุณ 1 ใบได้ทันที
+                                    </div>
+                                    <div style="text-align: center;">
+                                        <button class="button" id="myBtnEm4" onclick="ToggleReadmore('em4','myBtnEm4')">แสดง</button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <br>
+
+                        <div class="row">
+                            <div class="columnCard">
+                                <div class="imgCard" style="clear: both; text-align: center;">
+                                    <img border="0" data-original-height="614" data-original-width="421" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCwRL60JWZFqkF0lO2pZRs5CXWuXEVejqWzmUZTiS5-WskcnqWrsxAh3Y4bkV3nESK0WnHoJoP2WOKD0AZ8dw3ibMCervUygNcfOAqEjTCsW1r1pftibVVrvW_8JDL2cy94swI0Sg1wKJ4IgciwhMyDIFHJfSZzuPAk0u6uZu9ve3rvTHi4IgEJOP9/s1600/Palladium%20Oracle%20Mahad.jpg">
+                                </div>
+                            </div>
+
+                            <div class="columnInfo">
+                                <!--Name-->
+                                <div class="cardName">
+                                    <b><span style="color: #fff2cc; font-size: 150%; padding: 0px 2px 2px;">Palladium Oracle Mahad</span></b>
+                                    <br>(นักพรตผู้พิทักษ์ มาฮาโด)
+                                </div>
+                                <div style="padding: 5px;"></div>
+
+                                <div class="cardInfo">
+                                    <b> เลเวล:</b>&nbsp;7&nbsp;
+                                    <img alt="Level" src="https://images2.wikia.nocookie.net/__cb20120918052838/yugioh/images/thumb/e/e3/CG_Star.svg/18px-CG_Star.svg.png" style="vertical-align: middle; width: 4%;"> /
+                                    <b> ธาตุ:</b> แสง
+                                    <img alt="LIGHT - แสง" src="https://images1.wikia.nocookie.net/__cb20120918053834/yugioh/images/thumb/3/39/LIGHT.svg/24px-LIGHT.svg.png" style="vertical-align: middle; width: 4%;"> /
+                                    <b>&nbsp;เผ่าพันธุ์: </b>จอมเวทย์<br>
+                                    <b>พลังโจมตี:</b>&nbsp;2500 / <b>พลังป้องกัน:</b>&nbsp;2100
+                                </div>
+                                <div style="padding: 5px;"></div>
+
+                                <!--MonsterEffect-->
+                                <div class="cardEffect">
+                                    <div style="font-size: 110%; text-align: center;">
+                                        <b style="color: #ea9999;">เอฟเฟ็คมอนสเตอร์</b>
+                                    </div>
+                                    <div class="cardEffect short_text" id="em3">&nbsp;&nbsp;&nbsp;เมื่อคุณจั่วได้การ์ดใบนี้ คุณสามารถแสดงการ์ดใบนี้ จากนั้น อัญเชิญพิเศษมันจากบนมือของคุณได้ทันที เมื่อการ์ดใบนี้ต่อสู้กับมอนสเตอร์ธาตุมืด พลังโจมตีของมันจะกลายเป็นสองเท่าทันทีเฉพาะในช่วงความเสียหายเท่านั้น
+                                        เมื่อกการ์ดใบนี้ถูกทำลายจากกรณีใดก็ตาม คุณสามารถอัญเชิญพิเศษ "Dark Magician" จากบนมือ, ในเด็ค หรือในสุสานของคุณ 1 ใบได้ทันที
+                                    </div>
+                                    <div style="text-align: center;">
+                                        <button class="button" id="myBtnEm3" onclick="ToggleReadmore('em3','myBtnEm3')">แสดง</button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <br>
+
+                        <div class="row">
+                            <div class="columnCard">
+                                <div class="imgCard" style="clear: both; text-align: center;">
+                                    <img border="0" data-original-height="614" data-original-width="421" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqBL1NeFf5kurakX6Pc4FwOxLXSL95AtwLXVK7cb4uG-pUsno52O6FFoM4jKlw0iiaGhBDKe6t1x27_64KJ95D9-d2C7UK2bq7XLMo2HcdVFzjs7iI14WZHp0tcDlXYQese4HSB6SbdAiMx2K8wZVp1bTrhf7wgEcJ6GdAtL3vM_jyCdvsO7CuilfZ/s1600/Timaeus%20the%20United%20Dragon.jpg">
+                                </div>
+                            </div>
+
+                            <div class="columnInfo">
+                                <!--Name-->
+                                <div class="cardName">
+                                    <b><span style="color: #fff2cc; font-size: 150%; padding: 0px 2px 2px;">Timaeus the United Dragon</span></b>
+                                    <br>(มังกรผู้รวมเป็นหนึ่ง ทีไมออส)
+                                </div>
+                                <div style="padding: 5px;"></div>
+
+                                <div class="cardInfo">
+                                    <b> เลเวล:</b>&nbsp;8&nbsp;
+                                    <img alt="Level" src="https://images2.wikia.nocookie.net/__cb20120918052838/yugioh/images/thumb/e/e3/CG_Star.svg/18px-CG_Star.svg.png" style="vertical-align: middle; width: 4%;"> /
+                                    <b> ธาตุ:</b> แสง
+                                    <img alt="LIGHT - แสง" src="https://images1.wikia.nocookie.net/__cb20120918053834/yugioh/images/thumb/3/39/LIGHT.svg/24px-LIGHT.svg.png" style="vertical-align: middle; width: 4%;"> /
+                                    <b>&nbsp;เผ่าพันธุ์: </b>มังกร<br>
+                                    <b>พลังโจมตี:</b>&nbsp;2800 / <b>พลังป้องกัน:</b>&nbsp;1800
+                                </div>
+                                <div style="padding: 5px;"></div>
+
+                                <!--MonsterEffect-->
+                                <div class="cardEffect">
+                                    <div style="font-size: 110%; text-align: center;">
+                                        <b style="color: #ea9999;">เอฟเฟ็คมอนสเตอร์</b>
+                                    </div>
+                                    <div class="cardEffect short_text" id="em1">&nbsp;&nbsp;&nbsp;คุณสามารถเลือกการ์ดมอนสเตอร์เผ่าจอมเวทย์หรือการ์ดเวทมนตร์/กับดักที่มีการกล่าวถึง "Dark Magician" จากบนมือหรือที่หงายหน้าอยู่บนสนามของคุณ 1 ใบส่งลงสุสาน จากนั้น อัญเชิญพิเศษการ์ดใบนี้จากบนมือของคุณทันที
+                                        ในช่วง Main Phase ของคุณ คุณสามารถอัญเชิญฟิวชั่น มอนสเตอร์ฟิวชั่นจากในเอ็กตร้าเด็คของคุณ 1 ใบทันที โดยใช้การ์ดมอนสเตอร์จากบนมือหรือบนสนามของคุณเป็นวัตถุดิบ แต่ต้องมีมอนสเตอร์เผ่าจอมเวทย์รวมอยู่ด้วย คุณสามารถใช้เอฟเฟ็คแต่ละอย่างของ
+                                        "Timaeus the United Dragon" ได้เทิร์นละครั้งเท่านั้น
+                                    </div>
+                                    <div style="text-align: center;">
+                                        <button class="button" id="myBtnEm1" onclick="ToggleReadmore('em1','myBtnEm1')">แสดง</button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        </span>
+                        </section>
+
+                        <!--Fusion Monster Bar-->
+                        <section id="Fusion_Monster">
+                            <p class="separator" style="clear: both; text-align: center;">
+                                <img alt="" border="0" class="imgBar" src="https://blogger.googleusercontent.com/img/a/AVvXsEjQl8X06zJLZYtE4DJH3QQzoRqHzDxWTH_3egyZp2aRoqsK9BSa0ef38aadn6Sw6QYiEO1ieJZRTODNZoyUruM6BrdGnBUWHfCYG2ZPLYpmaG2U-UHXHksJ7JHsuAgNrdzGr5mJTx4rEnZFQseLby3PlUgXx0SWPCq1InCBJ5nKx6_DYNcS8yrozGxY"
+                                    width="100%">
+                                <img alt="" border="0" class="imgBarMobile" src="https://blogger.googleusercontent.com/img/a/AVvXsEjQl8X06zJLZYtE4DJH3QQzoRqHzDxWTH_3egyZp2aRoqsK9BSa0ef38aadn6Sw6QYiEO1ieJZRTODNZoyUruM6BrdGnBUWHfCYG2ZPLYpmaG2U-UHXHksJ7JHsuAgNrdzGr5mJTx4rEnZFQseLby3PlUgXx0SWPCq1InCBJ5nKx6_DYNcS8yrozGxY"
+                                    style="margin-left: auto; margin-right: auto; min-height: 50px; object-fit: cover; width: 100%;">
+                            </p>
+                            <span>
+    <div class="row">
+        <div class="columnCard">
+            <div class="imgCard" style="clear: both; text-align: center;">
+                <img border="0" data-original-height="614" data-original-width="421" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyHm14BruNgQK6KBreXHQVJFuoQbzKEa62PD95zMXaBUDTV4XSx2mhNVVbBObpEXR_ymK1Jz7MP8gymEwkJaJT1ZhvwKXIeGTHZHq6papX8k5ghEn8sW-kBzQlzGG3bmONTm3TkguqSXfmZHsTjHxyhF86CqUVBbqaTui8rUQFmBfBmB0Pc3a-cnEr/s1600/Dark%20Magician%20Girl%20the%20Dragon%20Knight.jpg">
+            </div>
+        </div>
+
+        <div class="columnInfo">
+            <!--Name-->
+            <div class="cardName">
+                <b><span style="color: #8e7cc3; font-size: 150%; padding: 0px 2px 2px;">Dark Magician Girl the Dragon Knight</span></b>
+                            <br>(อัศวินมังกร แบล็ค เมจิกเชี่ยน เกิร์ล)
+                    </div>
+                    <div style="padding: 5px;"></div>
+
+                    <div class="cardInfo">
+                        <b> เลเวล:</b>&nbsp;7&nbsp;
+                        <img alt="Level" src="https://images2.wikia.nocookie.net/__cb20120918052838/yugioh/images/thumb/e/e3/CG_Star.svg/18px-CG_Star.svg.png" style="vertical-align: middle; width: 4%;"> /
+                        <b> ธาตุ:</b> มืด
+                        <img alt="DARK - มืด" src="https://images2.wikia.nocookie.net/__cb20120918053850/yugioh/images/thumb/d/de/DARK.svg/24px-DARK.svg.png" style="vertical-align: middle; width: 4%;"> /
+                        <b>&nbsp;เผ่าพันธุ์: </b>จอมเวทย์<br>
+                        <b>พลังโจมตี:</b>&nbsp;2600 / <b>พลังป้องกัน:</b>&nbsp;1700
+                    </div>
+                    <div style="padding: 5px;"></div>
+
+                    <!--MonsterEffect-->
+                    <div class="cardEffect">
+                        <div style="font-size: 110%; text-align: center;">
+                            <b style="color: #ea9999;">เอฟเฟ็คมอนสเตอร์</b>
+                        </div>
+                        <div class="cardEffect short_text" id="fm8">"Dark Magician Girl" + มอนสเตอร์เผ่ามังกร 1 ใบ
+                            <br>&nbsp;&nbsp;&nbsp;การ์ดใบนี้ต้องอัญเชิญฟิวชั่นโดยใช้วัตถุดิบที่ระบุ หรืออัญเชิญด้วยเอฟเฟ็คของ "The Eye of Timaeus" เท่านั้น เทิร์นละครั้ง คุณสามารถเลือกการ์ดบนสนามของคุณ 1 ใบส่งลงสุสาน จากนั้น เลือกทำลายการ์ดที่หงายหน้าอยู่บนสนาม
+                            1 ใบทันที
+                        </div>
+                        <div style="text-align: center;">
+                            <button class="button" id="myBtnFm8" onclick="ToggleReadmore('fm8','myBtnFm8')">แสดง</button>
+                        </div>
+                    </div>
+
+                </div>
+
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="columnCard">
+                <div class="imgCard" style="clear: both; text-align: center;">
+                    <img border="0" data-original-height="614" data-original-width="421" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSzCFdSQpxqvXqN5RR3yArSbB5dn0DRaQ-vI6Y8BY16StVh15nURtdxJyVxlzL3dgMW5adBdiyUpYmSC8DbuyYK9D-tb6ZRrXGKSblOuVSrElajgfPtr8TfJrltjK_t-Z-a9O4D9mAJrdZhgfIucBf7hPMpHdT8dYd9txgVAI_3s_KVhJRoHrU8QXZ/s1600/Amulet%20Dragon.jpg">
+                </div>
+            </div>
+
+            <div class="columnInfo">
+                <!--Name-->
+                <div class="cardName">
+                    <b><span style="color: #8e7cc3; font-size: 150%; padding: 0px 2px 2px;">Amulet Dragon</span></b>
+                    <br>(อมูเล็ต ดราก้อน)
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <div class="cardInfo">
+                    <b> เลเวล:</b>&nbsp;8&nbsp;
+                    <img alt="Level" src="https://images2.wikia.nocookie.net/__cb20120918052838/yugioh/images/thumb/e/e3/CG_Star.svg/18px-CG_Star.svg.png" style="vertical-align: middle; width: 4%;"> /
+                    <b> ธาตุ:</b> มืด
+                    <img alt="DARK - มืด" src="https://images2.wikia.nocookie.net/__cb20120918053850/yugioh/images/thumb/d/de/DARK.svg/24px-DARK.svg.png" style="vertical-align: middle; width: 4%;"> /
+                    <b>&nbsp;เผ่าพันธุ์: </b>จอมเวทย์<br>
+                    <b>พลังโจมตี:</b>&nbsp;2900 / <b>พลังป้องกัน:</b>&nbsp;2500
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <!--MonsterEffect-->
+                <div class="cardEffect">
+                    <div style="font-size: 110%; text-align: center;">
+                        <b style="color: #ea9999;">เอฟเฟ็คมอนสเตอร์</b>
+                    </div>
+                    <div class="cardEffect short_text" id="fm6">"Dark Magician" + มอนสเตอร์เผ่ามังกร 1 ใบ<br>&nbsp;&nbsp;&nbsp;การ์ดใบนี้ต้องอัญเชิญฟิวชั่นโดยใช้วัตถุดิบที่ระบุ หรืออัญเชิญด้วยเอฟเฟ็คของ "The Eye of Timaeus" เท่านั้น เมื่อการ์ดใบนี้ถูกอัญเชิญพิเศษสำเร็จ ทำการเลือกการ์ดเวทมนตร์จากในสุสานกี่ใบก็ได้นำออกนอกเกม(อย่างน้อย
+                        1 ใบ) ถ้าสำเร็จ การ์ดใบนี้จะได้รับพลังโจมตีเพิ่มขึ้น 100 x จำนวนการ์ดที่ถูกนำออกนอกเกมด้วยเอฟเฟ็คนี้ทันที เมื่อการ์ดใบนี้ถูกทำลาย คุณสามารถอัญเชิญพิเศษมอนสเตอร์เผ่าจอมเวทย์ในสุสานของคุณ 1 ใบทันที
+                    </div>
+                    <div style="text-align: center;">
+                        <button class="button" id="myBtnFm6" onclick="ToggleReadmore('fm6','myBtnFm6')">แสดง</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="columnCard">
+                <div class="imgCard" style="clear: both; text-align: center;">
+                    <img border="0" data-original-height="614" data-original-width="421" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjYsx25XBjqkPSZzCQkCt6qR9NB3DEg2GG65low14vI-qVfW5vcJoUQqzRYk_6F5g-nsbW69D8uTjiMU4k2TN3nvHbFsr7YR1eM9QwOmVducCAQT2ISmVgkJqOPXhV3B9kFvGxDMr2u1f1xirxV0rlw60MnUiHI8d-e3EIwNcVKnR8R3OCje1-PaQBG/s1600/Dark%20Cavalry.jpg">
+                </div>
+            </div>
+
+            <div class="columnInfo">
+                <!--Name-->
+                <div class="cardName">
+                    <b><span style="color: #8e7cc3; font-size: 150%; padding: 0px 2px 2px;">Dark Cavalry</span></b>
+                    <br>(สุดยอดอัศวินมนตรา - แบล็ค คาวาลรี่)
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <div class="cardInfo">
+                    <b> เลเวล:</b>&nbsp;8&nbsp;
+                    <img alt="Level" src="https://images2.wikia.nocookie.net/__cb20120918052838/yugioh/images/thumb/e/e3/CG_Star.svg/18px-CG_Star.svg.png" style="vertical-align: middle; width: 4%;"> /
+                    <b> ธาตุ:</b> มืด
+                    <img alt="DARK - มืด" src="https://images2.wikia.nocookie.net/__cb20120918053850/yugioh/images/thumb/d/de/DARK.svg/24px-DARK.svg.png" style="vertical-align: middle; width: 4%;"> /
+                    <b>&nbsp;เผ่าพันธุ์: </b>จอมเวทย์<br>
+                    <b>พลังโจมตี:</b>&nbsp;2800 / <b>พลังป้องกัน:</b>&nbsp;2300
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <!--MonsterEffect-->
+                <div class="cardEffect">
+                    <div style="font-size: 110%; text-align: center;">
+                        <b style="color: #ea9999;">เอฟเฟ็คมอนสเตอร์</b>
+                    </div>
+                    <div class="cardEffect short_text" id="fm5">"Dark Magician" + มอนสเตอร์เผ่านักรบ 1 ใบ<br>&nbsp;&nbsp;&nbsp;การ์ดใบนี้จะได้รับพลังโจมตีเพิ่มขึ้น 100 x จำนวนการ์ดเวทมนตร์/กับดักบนสนามหรือในสุสานทั้งหมด เมื่อการ์ดใบนี้โจมตีใส่มอนสเตอร์ที่ตั้งป้องกัน มันจะสร้างความเสียหายแบบทะลุผ่านให้ทันที
+                        เมื่อมีเปิดใช้หรือใช้งานเอฟเฟ็คการ์ดที่มีเป้าหมายเป็นการ์ดบนสนาม คุณสามารถทิ้งการ์ด 1 ใบ จากนั้น ยกเลิกการใช้ครั้งนั้นทันที ถ้าทำสำเร็จ ทำลายการ์ดใบนั้นอีกด้วย
+                    </div>
+                    <div style="text-align: center;">
+                        <button class="button" id="myBtnFm5" onclick="ToggleReadmore('fm5','myBtnFm5')">แสดง</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="columnCard">
+                <div class="imgCard" style="clear: both; text-align: center;">
+                    <img border="0" data-original-height="614" data-original-width="421" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicndtlRIGZ3Lzq1AX39KbwZLlma3qzXS2MGkwi8frM0tUN6xPQfHdrSxtgVXlkDIIOB1u0MG_apgqP68KaUG214H00ao7PbHCFGbKZZKKGDnB2-RieKezeRAJ3AdIIMHYf6pes4n69cP8eMOSkqEoUB_W8kw16GAwyrsYoIfcJFgP51VZbEWCCaowI/s1600/Dark%20Magician%20the%20Dragon%20Knight.jpg">
+                </div>
+            </div>
+
+            <div class="columnInfo">
+                <!--Name-->
+                <div class="cardName">
+                    <b><span style="color: #8e7cc3; font-size: 150%; padding: 0px 2px 2px;">Dark Magician the Dragon Knight</span></b>
+                    <br>(อัศวินมังกร แบล็ค เมจิกเชี่ยน)
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <div class="cardInfo">
+                    <b> เลเวล:</b>&nbsp;8&nbsp;
+                    <img alt="Level" src="https://images2.wikia.nocookie.net/__cb20120918052838/yugioh/images/thumb/e/e3/CG_Star.svg/18px-CG_Star.svg.png" style="vertical-align: middle; width: 4%;"> /
+                    <b> ธาตุ:</b> มืด
+                    <img alt="DARK - มืด" src="https://images2.wikia.nocookie.net/__cb20120918053850/yugioh/images/thumb/d/de/DARK.svg/24px-DARK.svg.png" style="vertical-align: middle; width: 4%;"> /
+                    <b>&nbsp;เผ่าพันธุ์: </b>จอมเวทย์<br>
+                    <b>พลังโจมตี:</b>&nbsp;3000 / <b>พลังป้องกัน:</b>&nbsp;2500
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <!--MonsterEffect-->
+                <div class="cardEffect">
+                    <div style="font-size: 110%; text-align: center;">
+                        <b style="color: #ea9999;">เอฟเฟ็คมอนสเตอร์</b>
+                    </div>
+                    <div class="cardEffect">"Dark Magician" + มอนสเตอร์เผ่ามังกร 1 ใบ<br>&nbsp;&nbsp;&nbsp;การ์ดใบนี้จะถือว่ามันมีชื่อว่า "Dark Magician" เมื่อมันอยู่บนสนามหรือในสุสาน การ์ดเวทมนตร์/กับดักบนสนามของคุณจะไม่ตกเป็นเป้าและไม่ถูกทำลายจากเอฟเฟ็คอีกฝ่าย
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="columnCard">
+                <div class="imgCard" style="clear: both; text-align: center;">
+                    <img border="0" data-original-height="614" data-original-width="421" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXqtTfeA-HtNRIJDJ-hS7n9TEhXQ5Vtzsb7bIx2cqRkH1eqbpsFvsXMThu9Kj2Hj_FVNiXhwGhumn4CSoCAasXGaMLJZRyme81sJzCMCjf-PcYQ3u3r8fV0-f6eBF9bi_nzJzDsLRjCzlhrkdJ7ksP0A2EyNNmJo2jMn_p8pZgAbU1hzlt8HwPjHiE/s1600/Dark%20Paladin.jpg">
+                </div>
+            </div>
+
+            <div class="columnInfo">
+                <!--Name-->
+                <div class="cardName">
+                    <b><span style="color: #8e7cc3; font-size: 150%; padding: 0px 2px 2px;">Dark Paladin</span></b>
+                    <br>(สุดยอดนักดาบมนตรา - แบล็ค พาลาดิน)
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <div class="cardInfo">
+                    <b> เลเวล:</b>&nbsp;8&nbsp;
+                    <img alt="Level" src="https://images2.wikia.nocookie.net/__cb20120918052838/yugioh/images/thumb/e/e3/CG_Star.svg/18px-CG_Star.svg.png" style="vertical-align: middle; width: 4%;"> /
+                    <b> ธาตุ:</b> มืด
+                    <img alt="DARK - มืด" src="https://images2.wikia.nocookie.net/__cb20120918053850/yugioh/images/thumb/d/de/DARK.svg/24px-DARK.svg.png" style="vertical-align: middle; width: 4%;"> /
+                    <b>&nbsp;เผ่าพันธุ์: </b>จอมเวทย์<br>
+                    <b>พลังโจมตี:</b>&nbsp;2900 / <b>พลังป้องกัน:</b>&nbsp;2400
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <!--MonsterEffect-->
+                <div class="cardEffect">
+                    <div style="font-size: 110%; text-align: center;">
+                        <b style="color: #ea9999;">เอฟเฟ็คมอนสเตอร์</b>
+                    </div>
+                    <div class="cardEffect short_text" id="fm4">"Dark Magician" + "Buster Blader"<br>&nbsp;&nbsp;&nbsp;การ์ดใบนี้ต้องอัญเชิญฟิวชั่นเท่านั้น เมื่อมีการใช้งานการ์ดเวทมนตร์ในขณะที่การ์ดใบนี้หงายหน้าอยู่ คุณสามารถทิ้งการ์ด 1 ใบ จากนั้น ยกเลิกการใช้ครั้งนั้นทันที ถ้าทำสำเร็จ ทำลายการ์ดใบนั้นด้วยทันที(เป็น
+                        Quick Effect) การ์ดใบนี้จะได้รับพลังโจมตีเพิ่มขึ้น 500 x จำนวนการ์ดมอนสเตอร์เผ่ามังกรบนสนามและในสุสานทั้งหมด
+                    </div>
+                    <div style="text-align: center;">
+                        <button class="button" id="myBtnFm4" onclick="ToggleReadmore('fm4','myBtnFm4')">แสดง</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="columnCard">
+                <div class="imgCard" style="clear: both; text-align: center;">
+                    <img border="0" data-original-height="614" data-original-width="421" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoGFonNeAuQpDg8lncxaUvzo3vA29YC9vlL-bAvDnO4XZP2_4XBe_ThEW3DSIWIBuzaaBh3go-3w7ysBz2grm4s6snrSFhYo9Ko2ipCrLkBjHWNsWhZJ3A4Tvp3USnffebvqe48YIbTmqQWC-TZjH3_doD_B6kuL0V0FoKoA0SX0aLg-oJ1rCP9VFE/s1600/Master%20of%20Chaos.jpg">
+                </div>
+            </div>
+
+            <div class="columnInfo">
+                <!--Name-->
+                <div class="cardName">
+                    <b><span style="color: #8e7cc3; font-size: 150%; padding: 0px 2px 2px;">Master of Chaos</span></b>
+                    <br>(สุดยอดนักรบมนตรา - มาสเตอร์ ออฟ คาออส)
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <div class="cardInfo">
+                    <b> เลเวล:</b>&nbsp;8&nbsp;
+                    <img alt="Level" src="https://images2.wikia.nocookie.net/__cb20120918052838/yugioh/images/thumb/e/e3/CG_Star.svg/18px-CG_Star.svg.png" style="vertical-align: middle; width: 4%;"> /
+                    <b> ธาตุ:</b> มืด
+                    <img alt="DARK - มืด" src="https://images2.wikia.nocookie.net/__cb20120918053850/yugioh/images/thumb/d/de/DARK.svg/24px-DARK.svg.png" style="vertical-align: middle; width: 4%;"> /
+                    <b>&nbsp;เผ่าพันธุ์: </b>จอมเวทย์<br>
+                    <b>พลังโจมตี:</b>&nbsp;3000 / <b>พลังป้องกัน:</b>&nbsp;2500
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <!--MonsterEffect-->
+                <div class="cardEffect">
+                    <div style="font-size: 110%; text-align: center;">
+                        <b style="color: #ea9999;">เอฟเฟ็คมอนสเตอร์</b>
+                    </div>
+                    <div class="cardEffect short_text" id="fm3">"Dark Magician" + มอนสเตอร์พิธีกรรมที่มีชื่อว่า "Chaos" หรือ <a href="https://ygokarlima.blogspot.com/2022/09/yu-gi-oh-card-series-black-luster.html">"Black Luster Soldier"</a> 1 ใบ<br>&nbsp;&nbsp;&nbsp;เมื่อการ์ดใบนี้ถูกอัญเชิญฟิวชั่นสำเร็จ
+                        คุณสามารถอัญเชิญพิเศษมอนสเตอร์ธาตุมืดหรือธาตุแสงจากในสุสานของคุณ 1 ใบได้ทันที คุณสามารถสังเวยมอนสเตอร์ธาตุมืดหรือธาตุแสง 1 ใบ จากนั้น นำมอนสเตอร์บนสนามอีกฝ่ายทั้งหมดออกนอกเกมทันที เมื่อการ์ดใบนี้ถูกอัญเชิญฟิวชั่นสำเร็จแล้วมันถูกทำลายจากกรณีใดก็ตาม
+                        คุณสามารถเลือกการ์ดเวทมนตร์จากในสุสานของคุณ 1 ใบเพิ่มขึ้นมือทันที คุณสามารถใช้เอฟเฟ็คแต่ละอย่างของ "Master of Chaos" ได้เทิร์นละครั้งเท่านั้น
+                    </div>
+                    <div style="text-align: center;">
+                        <button class="button" id="myBtnFm3" onclick="ToggleReadmore('fm3','myBtnFm3')">แสดง</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="columnCard">
+                <div class="imgCard" style="clear: both; text-align: center;">
+                    <img border="0" data-original-height="614" data-original-width="421" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhahjA97h__EM4S_reYwWMJpSmBDjE606XSmuCE2xlvB8QwXWRwf99Ehb-M3thZsPPEGoVTHyj0sEVgbRw83DMzvBoXfnzJPaEqX6-BKdlUyMu7_hjghoVgXaf6FMlC5-CXdnPYtZkG5pDZaR8wuFD6DQjTLybco0iaPYiSxJwq_Wisa0JQYkAElJvT/s1600/Red-Eyes%20Dark%20Dragoon.jpg">
+                </div>
+            </div>
+
+            <div class="columnInfo">
+                <!--Name-->
+                <div class="cardName">
+                    <b><span style="color: #8e7cc3; font-size: 150%; padding: 0px 2px 2px;">Red-Eyes Dark Dragoon</span></b>
+                    <br>(สุดยอดอัศวินมังกรมนตรา - ดรากูน ออฟ เร้ดอาย)
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <div class="cardInfo">
+                    <b> เลเวล:</b>&nbsp;8&nbsp;
+                    <img alt="Level" src="https://images2.wikia.nocookie.net/__cb20120918052838/yugioh/images/thumb/e/e3/CG_Star.svg/18px-CG_Star.svg.png" style="vertical-align: middle; width: 4%;"> /
+                    <b> ธาตุ:</b> มืด
+                    <img alt="DARK - มืด" src="https://images2.wikia.nocookie.net/__cb20120918053850/yugioh/images/thumb/d/de/DARK.svg/24px-DARK.svg.png" style="vertical-align: middle; width: 4%;"> /
+                    <b>&nbsp;เผ่าพันธุ์: </b>จอมเวทย์<br>
+                    <b>พลังโจมตี:</b>&nbsp;3000 / <b>พลังป้องกัน:</b>&nbsp;2500
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <!--MonsterEffect-->
+                <div class="cardEffect">
+                    <div style="font-size: 110%; text-align: center;">
+                        <b style="color: #ea9999;">เอฟเฟ็คมอนสเตอร์</b>
+                    </div>
+                    <div class="cardEffect short_text" id="fm2">"Dark Magician" + "Red-Eyes Black Dragon" หรือ มอนสเตอร์เอฟเฟ็คเผ่ามังกร 1 ใบ<br>&nbsp;&nbsp;&nbsp;การ์ดใบนี้จะไม่ถูกทำลายจากการต่อสู้ และผู้เล่นทั้งหมดจะไม่สามารถเลือกการ์ดใบนี้เป็นเป้าหมายของเอฟเฟ็คการ์ดได้ ในช่วง Main Phase ของคุณ
+                        คุณสามารถเลือกทำลายมอนสเตอร์บนสนามอีกฝ่าย 1 ใบ ถ้าทำสำเร็จ สร้างความเสียหายให้อีกฝ่ายเท่ากับค่าพลังโจมตีตั้งต้นของการ์ดที่ถูกทำลายใบนั้นทันที คุณสามารถใช้เอฟเฟ็คได้สูงสุดเท่ากับจำนวนมอนสเตอร์ปกติที่ใช้เป็นวัตถุดิบฟิวชั่นในการอัญเชิญการ์ดใบนี้
+                        เทิร์นละครั้ง เมื่อมีเปิดใช้หรือใช้งานเอฟเฟ็คการ์ด คุณสามารถทิ้งการ์ด 1 ใบ แล้วยกเลิกการใช้ครั้งนั้น ถ้าทำสำเร็จ ทำลายการ์ดใบนั้นด้วยทันที ถ้าทำสำเร็จแน่นอน การ์ดใบนี้จะได้รับพลังโจมตีเพิ่มขึ้น 1000 อีกด้วย(เป็น Quick Effect)
+                    </div>
+                    <div style="text-align: center;">
+                        <button class="button" id="myBtnFm2" onclick="ToggleReadmore('fm2','myBtnFm2')">แสดง</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="columnCard">
+                <div class="imgCard" style="clear: both; text-align: center;">
+                    <img border="0" data-original-height="614" data-original-width="421" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlM2M7IkoWoSx1OSHPed0fdpl_twvHqIe2WRBLtfhefZ7-LVujvmDm-1Z7ldTyEVKZs5AE5WSnArJA1nXe29x8MQSU87jZJIsLSH4KJz19raF_b2LRI1eHR8BMCvZUDSXp5iOAbbE5oUQVr6ohGQ-URKOj_ZuLUlwYKmGL2n8wy1jmD_LyXLXFxuzb/s1600/The%20Dark%20Magicians.jpg">
+                </div>
+            </div>
+
+            <div class="columnInfo">
+                <!--Name-->
+                <div class="cardName">
+                    <b><span style="color: #8e7cc3; font-size: 150%; padding: 0px 2px 2px;">The Dark Magicians</span></b>
+                    <br>(สุดยอดเหล่าจอมเวทย์ - แบล็ค เมจิกเชี่ยน)
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <div class="cardInfo">
+                    <b> เลเวล:</b>&nbsp;8&nbsp;
+                    <img alt="Level" src="https://images2.wikia.nocookie.net/__cb20120918052838/yugioh/images/thumb/e/e3/CG_Star.svg/18px-CG_Star.svg.png" style="vertical-align: middle; width: 4%;"> /
+                    <b> ธาตุ:</b> มืด
+                    <img alt="DARK - มืด" src="https://images2.wikia.nocookie.net/__cb20120918053850/yugioh/images/thumb/d/de/DARK.svg/24px-DARK.svg.png" style="vertical-align: middle; width: 4%;"> /
+                    <b>&nbsp;เผ่าพันธุ์: </b>จอมเวทย์<br>
+                    <b>พลังโจมตี:</b>&nbsp;2800 / <b>พลังป้องกัน:</b>&nbsp;2300
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <!--MonsterEffect-->
+                <div class="cardEffect">
+                    <div style="font-size: 110%; text-align: center;">
+                        <b style="color: #ea9999;">เอฟเฟ็คมอนสเตอร์</b>
+                    </div>
+                    <div class="cardEffect short_text" id="fm1">"Dark Magician" หรือ "Dark Magician Girl" + มอนสเตอร์เผ่าจอมเวทย์ 1 ใบ<br>&nbsp;&nbsp;&nbsp;เทิร์นละครั้ง เมื่อมีการใช้เอฟเฟ็คการ์ด(ยกเว้นในช่วงความเสียหาย) คุณสามารถจั่วการ์ด 1 ใบได้ทันที ถ้าการ์ดใบนั้นเป็นการ์ดเวทมนตร์/กับดัก คุณสามารถเซ็ตคว่ำมันลงบนสนามของคุณได้อีกด้วย
+                        แล้วถ้าการ์ดใบนั้นเป็นการ์ดกับดักหรือเวทย์ความเร็วสูง คุณสามารถเปิดใช้งานมันได้ทันทีในเทิร์นนี้ เมื่อการ์ดใบนี้ถูกทำลาย คุณสามารถอัญเชิญพิเศษ "Dark Magician" และ "Dark Magician Girl" จากบนมือ, ในเด็ค หรือในสุสานของคุณอย่างละ 1
+                        ใบได้ทันที
+                    </div>
+                    <div style="text-align: center;">
+                        <button class="button" id="myBtnFm1" onclick="ToggleReadmore('fm1','myBtnFm1')">แสดง</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        </span>
+        </section>
+
+        <!--Ritual Monster Bar-->
+        <section id="Ritual_Monster">
+            <p class="separator" style="clear: both; text-align: center;">
+                <img alt="" border="0" class="imgBar" src="https://blogger.googleusercontent.com/img/a/AVvXsEiyXySyrr_Hrp0KHmawNV9-kZ2Z33q8JIF6gxyPIjWMYk2nMTzMZk62nr84h5fgBhEJ3t70zME0uCWjdsclb7YW9KngiL8f72y-6Nz039tF9QzViBHmaLM9GVCO3mlVRSETDbqU-XmUMxb5zczkO-lBaQH15HacIFthW6khEVBu6V3wC-SlcyrtEmTJ"
+                    width="100%">
+                <img alt="" border="0" class="imgBarMobile" src="https://blogger.googleusercontent.com/img/a/AVvXsEiyXySyrr_Hrp0KHmawNV9-kZ2Z33q8JIF6gxyPIjWMYk2nMTzMZk62nr84h5fgBhEJ3t70zME0uCWjdsclb7YW9KngiL8f72y-6Nz039tF9QzViBHmaLM9GVCO3mlVRSETDbqU-XmUMxb5zczkO-lBaQH15HacIFthW6khEVBu6V3wC-SlcyrtEmTJ"
+                    style="margin-left: auto; margin-right: auto; min-height: 50px; object-fit: cover; width: 100%;">
+            </p>
+            <span>
+            
+                <div class="row">
+            <div class="columnCard">
+              <div class="imgCard" style="clear: both; text-align: center;">
+                <img border="0" data-original-height="614" data-original-width="421" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivKIiwe2orE_Bk3jBWW7Tt-RTcA5weiev-AlN0NZCm-UGV48CuFK2sS5xT2KeWNfRmf0rVDr5-mcKYicwHPYtOyAxWUs6nbnMe0wkp9Fm6DmEQTZWFpLL6ES9bIZlOuOlC3pXBI75h1xLfN-c2vjN6PHwsmHzkKfS_Dzwg-3ilRstaiK3YWxeMsikH/s1600/Illusion%20of%20Chaos.jpg">
+              </div>
+            </div>
+        
+            <div class="columnInfo">
+        <!--Name-->
+              <div class="cardName">
+                <b><span style="color: #8e7cc3; font-size: 150%; padding: 0px 2px 2px;">Illusion of Chaos</span></b>
+            <br>(อิลลูชั่น ออฟ คาออส)
+    </div>
+    <div style="padding: 5px;"></div>
+
+    <div class="cardInfo">
+        <b> เลเวล:</b>&nbsp;7&nbsp;
+        <img alt="Level" src="https://images2.wikia.nocookie.net/__cb20120918052838/yugioh/images/thumb/e/e3/CG_Star.svg/18px-CG_Star.svg.png" style="vertical-align: middle; width: 4%;"> /
+        <b> ธาตุ:</b> มืด
+        <img alt="DARK - มืด" src="https://images2.wikia.nocookie.net/__cb20120918053850/yugioh/images/thumb/d/de/DARK.svg/24px-DARK.svg.png" style="vertical-align: middle; width: 4%;"> /
+        <b>&nbsp;เผ่าพันธุ์: </b>จอมเวทย์<br>
+        <b>พลังโจมตี:</b>&nbsp;2100 / <b>พลังป้องกัน:</b>&nbsp;2500
+    </div>
+    <div style="padding: 5px;"></div>
+
+    <!--MonsterEffect-->
+    <div class="cardEffect">
+        <div style="font-size: 110%; text-align: center;">
+            <b style="color: #ea9999;">เอฟเฟ็คมอนสเตอร์</b>
+        </div>
+        <div class="cardEffect short_text" id="rm3">&nbsp;&nbsp;&nbsp;คุณสามารถอัญเชิญพิธีกรรมการ์ดใบนี้ได้โดยเอฟเฟ็คของ "Chaos Form" คุณสามารถแสดงการ์ดใบนี้จากบนมือของคุณ จากนั้น เลือก "Dark Magician" หรือมอนสเตอร์ที่ไม่ใช่มอนสเตอร์พิธีกรรมที่มีการกล่าวถึง "Dark Magician" จากในเด็คของคุณ 1 ใบเพิ่มขึ้นมือ
+            จากนั้น เลือกการ์ดบนมือของคุณ 1 ใบไปวางบนสุดเด็คของคุณทันที เมื่ออีกฝ่ายใช้เอฟเฟ็คมอนสเตอร์ คุณสามารถนำการ์ดใบนี้กลับขึ้นมือ ถ้าทำสำเร็จ อัญเชิญพิเศษ "Dark Magician" จากในสุสานของคุณ 1 ใบ ถ้าทำสำเร็จแน่นอน ยกเลิกการใช้ครั้งนั้นทันที คุณสามารถใช้เอฟเฟ็คแต่ละอย่างของ
+            "Illusion of Chaos" ได้เทิร์นละครั้งเท่านั้น
+        </div>
+        <div style="text-align: center;">
+            <button class="button" id="myBtnRm3" onclick="ToggleReadmore('rm3','myBtnRm3')">แสดง</button>
+        </div>
+    </div>
+
+    </div>
+
+    </div>
+    <br>
+
+    <div class="row">
+        <div class="columnCard">
+            <div class="imgCard" style="clear: both; text-align: center;">
+                <img border="0" data-original-height="614" data-original-width="421" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKS1I__XE4RKZ-_Hm7NrQzav8pHUkh9Lxrn5b2k_Bd6Hq04Chg6H35zQyt4ubKdrqnX8KwZBGcU6_H5Nn4UUVV7RQl2h9pgG1vP12iyE9udJ4JIMwfRYvCzWMEfWRRrWIYQhHfF6xDjqzDkmEbT1FjKj_HeWFIpAxdmn-KwPBTaD9KhTWxkhcH71as/s1600/Magician%20of%20Chaos.jpg">
+            </div>
+        </div>
+
+        <div class="columnInfo">
+            <!--Name-->
+            <div class="cardName">
+                <b><span style="color: #8e7cc3; font-size: 150%; padding: 0px 2px 2px;">Magician of Chaos</span></b>
+                <br>(เมจิกเชี่ยน ออฟ คาออส)
+            </div>
+            <div style="padding: 5px;"></div>
+
+            <div class="cardInfo">
+                <b> เลเวล:</b>&nbsp;7&nbsp;
+                <img alt="Level" src="https://images2.wikia.nocookie.net/__cb20120918052838/yugioh/images/thumb/e/e3/CG_Star.svg/18px-CG_Star.svg.png" style="vertical-align: middle; width: 4%;"> /
+                <b> ธาตุ:</b> มืด
+                <img alt="DARK - มืด" src="https://images2.wikia.nocookie.net/__cb20120918053850/yugioh/images/thumb/d/de/DARK.svg/24px-DARK.svg.png" style="vertical-align: middle; width: 4%;"> /
+                <b>&nbsp;เผ่าพันธุ์: </b>จอมเวทย์<br>
+                <b>พลังโจมตี:</b>&nbsp;2500 / <b>พลังป้องกัน:</b>&nbsp;2100
+            </div>
+            <div style="padding: 5px;"></div>
+
+            <!--MonsterEffect-->
+            <div class="cardEffect">
+                <div style="font-size: 110%; text-align: center;">
+                    <b style="color: #ea9999;">เอฟเฟ็คมอนสเตอร์</b>
+                </div>
+                <div class="cardEffect short_text" id="rm2">&nbsp;&nbsp;&nbsp;คุณสามารถอัญเชิญพิธีกรรมการ์ดใบนี้ได้โดยเอฟเฟ็คของ "Chaos Form" การ์ดใบนี้จะถือว่ามันมีชื่อว่า "Dark Magician" เมื่อมันอยู่บนสนามหรือในสุสาน เทิร์นละครั้ง เมื่อมีการเปิดใช้งานเอฟเฟ็คการ์ด คุณสามารถเลือกทำลายการ์ดบนสนาม
+                    1 ใบได้ทันที(เป็น Quick Effect) เมื่อการ์ดใบนี้ถูกอัญเชิญพิธีกรรมสำเร็จ แล้วมันถูกทำลายจากกรณีใดก็ตาม คุณสามารถอัญเชิญพิเศษมอนสเตอร์พิธีกรรมที่มีชื่อว่า "Chaos" หรือ <a href="https://ygokarlima.blogspot.com/2022/09/yu-gi-oh-card-series-black-luster.html">"Black Luster Soldier"</a>                    ยกเว้น "Magician of Chaos" จากบนมือของคุณ 1 ใบได้ทันทีโดยไม่สนใจเงื่อนไขใดๆ ทั้งสิ้น
+                </div>
+                <div style="text-align: center;">
+                    <button class="button" id="myBtnRm2" onclick="ToggleReadmore('rm2','myBtnRm2')">แสดง</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <br>
+
+    <div class="row">
+        <div class="columnCard">
+            <div class="imgCard" style="clear: both; text-align: center;">
+                <img border="0" data-original-height="614" data-original-width="421" src="https://blogger.googleusercontent.com/img/a/AVvXsEiOtwbOzJNYY4o_w3ss6HHAqpDjIKB07exO2M44gH_77h48rsHY3tOU0Ir6JdV1-KbyOJj3WulGt4J8bvt8dXPqqxa4CfogoAZaLewONq1BNaZOyUjuItURS5Z4ByimpNfRvIr4QLbgQ22GsF4Hdu9UpG8vdwxHhBvHvbeEpxsmOtpElgyBc8Z4cJEU">
+            </div>
+        </div>
+
+        <div class="columnInfo">
+            <!--Name-->
+            <div class="cardName">
+                <b><span style="color: #8e7cc3; font-size: 150%; padding: 0px 2px 2px;">Magician of Black Chaos</span></b>
+                <br>(เมจิกเชี่ยน ออฟ แบล็ค คาออส)
+            </div>
+            <div style="padding: 5px;"></div>
+
+            <div class="cardInfo">
+                <b> เลเวล:</b>&nbsp;8&nbsp;
+                <img alt="Level" src="https://images2.wikia.nocookie.net/__cb20120918052838/yugioh/images/thumb/e/e3/CG_Star.svg/18px-CG_Star.svg.png" style="vertical-align: middle; width: 4%;"> /
+                <b> ธาตุ:</b> มืด
+                <img alt="DARK - มืด" src="https://images2.wikia.nocookie.net/__cb20120918053850/yugioh/images/thumb/d/de/DARK.svg/24px-DARK.svg.png" style="vertical-align: middle; width: 4%;"> /
+                <b>&nbsp;เผ่าพันธุ์: </b>จอมเวทย์<br>
+                <b>พลังโจมตี:</b>&nbsp;2800 / <b>พลังป้องกัน:</b>&nbsp;2600
+            </div>
+            <div style="padding: 5px;"></div>
+
+            <!--MonsterEffect-->
+            <div class="cardEffect">
+                <div style="font-size: 110%; text-align: center;">
+                    <b style="color: #9fc5e8;">การทำพิธีกรรม</b>
+                </div>
+                <div class="cardEffect">&nbsp;&nbsp;&nbsp;คุณสามารถอัญเชิญพิธีกรรมการ์ดใบนี้ได้โดยเอฟเฟ็คของ "Black Magic Ritual"
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <br>
+
+    </span>
+    </section>
+
+    <!--Spell Card Bar-->
+    <section id="spell_card">
+        <p class="separator" style="clear: both; text-align: center;">
+            <img alt="" border="0" class="imgBar" src="https://blogger.googleusercontent.com/img/a/AVvXsEgCWPDqkT-aV1tRPKK8piJcL9pat5JN8FnpicPuR48Zrt5Dn-ZKz27e6kFLINeitPih4kIT0FxeVPmYyxl_vS0VUde9EZLBC_rYOQu8hJsHNu0AFkGZk-nn7HlAT9Z_A3M_Bnmo84r120kU2sWvXyLYHoq6sgR0-CoS0NV2ctHDMk1sv-_kB4i2nftF"
+                width="100%">
+            <img alt="" border="0" class="imgBarMobile" src="https://blogger.googleusercontent.com/img/a/AVvXsEgCWPDqkT-aV1tRPKK8piJcL9pat5JN8FnpicPuR48Zrt5Dn-ZKz27e6kFLINeitPih4kIT0FxeVPmYyxl_vS0VUde9EZLBC_rYOQu8hJsHNu0AFkGZk-nn7HlAT9Z_A3M_Bnmo84r120kU2sWvXyLYHoq6sgR0-CoS0NV2ctHDMk1sv-_kB4i2nftF"
+                style="margin-left: auto; margin-right: auto; min-height: 50px; object-fit: cover; width: 100%;">
+        </p>
+        <span>
+            
+            <!--Normal--><span>
+              
+              <div class="row">
+            <div class="columnCard">
+              <div class="imgCard" style="clear: both; text-align: center;">
+                <img border="0" data-original-height="614" data-original-width="421" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBUxONpDz0X1tb3LKffWS6ihLraqxPRcdMxW3MFc-NgK6Agxm0W25ao-432_lPbuIkQOiUmYuRPeOKt1v0g7Ksc_A66GdwJynsAzcIziy7Ch3RuKku16IXJRpOo3XwoaEUnLCIjwO3fZYnoEko3p4CeB5vpg0esTNde3GaToBCn9VisRWiOyQswTqj/s1600/Bond%20Between%20Teacher%20and%20Student.jpg">
+              </div>
+            </div>
+        
+            <div class="columnInfo">
+              <div class="cardName">
+                <b><span style="color: #48c293; font-size: 150%; padding: 0px 2px 2px;">Bond Between Teacher and Student</span></b>
+        <br>(สายสัมพันธ์ศิษย์อาจารย์)
+        </div>
+        <div style="padding: 5px;"></div>
+
+        <!--Normal-->
+        <div class="cardInfo">
+            <b> ประเภท:</b> ปกติ
+            <img alt="Normal - ปกติ" src="https://images3.wikia.nocookie.net/__cb20120920120541/yugioh/images/thumb/0/01/Normal.svg/18px-Normal.svg.png" style="vertical-align: middle; width: 4%;">
+        </div>
+        <div style="padding: 5px;"></div>
+
+        <!--Spell-->
+        <div class="cardEffect">
+            <div style="font-size: 110%; text-align: center;">
+                <b style="color: #48c293;">เอฟเฟ็คเวทมนตร์</b>
+            </div>
+            <div class="cardEffect short_text" id="s12">&nbsp;&nbsp;&nbsp;เมื่อบนสนามของคุณมี "Dark Magician" อยู่ ทำการอัญเชิญพิเศษ "Dark Magician Girl" จากบนมือ, ในเด็ค หรือในสุสานของคุณ 1 ใบทันที จากนั้น คุณสามารถเลือก "Dark Burning Attack", "Dark Burning Magic", "Dark Magic Attack" หรือ "Dark
+                Magic Twin Burst" จากในเด็คของคุณ 1 ใบมาเซ็ตคว่ำบนสนามได้ทันที คุณสามารถใช้ "Bond Between Teacher and Student" ได้เทิร์นละครั้งเท่านั้น
+            </div>
+            <div style="text-align: center;">
+                <button class="button" id="myBtnS12" onclick="ToggleReadmore('s12','myBtnS12')">แสดง</button>
+            </div>
+        </div>
+
+        </div>
+
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="columnCard">
+                <div class="imgCard" style="clear: both; text-align: center;">
+                    <img border="0" data-original-height="614" data-original-width="421" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtrSV5yA8gVBblMjTX9CmRf5iXJSB4aTpXKBEIjNMFinFGAcTvwaq-WmievTrAZfrNGTthCaN8sD_KNhLV7LR6Fup6h8yCcJzoGsa5W7qHuTpvTybCaaV6rxVXODSTemf_XwT_EkRL8YVT8NAM41W0y4WstRYMDg2twWptAp9JE9sA1ayzMu2Mxupo/s1600/Dark%20Burning%20Attack.jpg">
+                </div>
+            </div>
+
+            <div class="columnInfo">
+                <div class="cardName">
+                    <b><span style="color: #48c293; font-size: 150%; padding: 0px 2px 2px;">Dark Burning Attack</span></b>
+                    <br>(แบล็ค เบิร์นนิ่ง)
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <!--Normal-->
+                <div class="cardInfo">
+                    <b> ประเภท:</b> ปกติ
+                    <img alt="Normal - ปกติ" src="https://images3.wikia.nocookie.net/__cb20120920120541/yugioh/images/thumb/0/01/Normal.svg/18px-Normal.svg.png" style="vertical-align: middle; width: 4%;">
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <!--Spell-->
+                <div class="cardEffect">
+                    <div style="font-size: 110%; text-align: center;">
+                        <b style="color: #48c293;">เอฟเฟ็คเวทมนตร์</b>
+                    </div>
+                    <div class="cardEffect">&nbsp;&nbsp;&nbsp;เมื่อบนสนามของคุณมี "Dark Magician Girl" อยู่ ทำลายมอนสเตอร์ที่หงายหน้าบนสนามอีกฝ่ายทั้งหมดทันที
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="columnCard">
+                <div class="imgCard" style="clear: both; text-align: center;">
+                    <img border="0" data-original-height="614" data-original-width="421" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEig5kc35XuxWI1XKKK3eQibrUU40mostAo4qMs8iSzsngyEGDSjiAF0TRzSiTxYLOtY2ukcAlxSktZXvkJ0cFIZU-FkzXLBa2v27SpqyQmvvi8PsAUd1QE1Nv4fnCeVw-Mr6as9Ktfk499CtFxR4GmjLsrgROsF6u0zJUNfAalaYz-UFnQ1CZulSaOW/s1600/Dark%20Magic%20Attack.jpg">
+                </div>
+            </div>
+
+            <div class="columnInfo">
+                <div class="cardName">
+                    <b><span style="color: #48c293; font-size: 150%; padding: 0px 2px 2px;">Dark Magic Attack</span></b>
+                    <br>(แบล็ค เมจิก)
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <!--Normal-->
+                <div class="cardInfo">
+                    <b> ประเภท:</b> ปกติ
+                    <img alt="Normal - ปกติ" src="https://images3.wikia.nocookie.net/__cb20120920120541/yugioh/images/thumb/0/01/Normal.svg/18px-Normal.svg.png" style="vertical-align: middle; width: 4%;">
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <!--Spell-->
+                <div class="cardEffect">
+                    <div style="font-size: 110%; text-align: center;">
+                        <b style="color: #48c293;">เอฟเฟ็คเวทมนตร์</b>
+                    </div>
+                    <div class="cardEffect">&nbsp;&nbsp;&nbsp;เมื่อบนสนามของคุณมี "Dark Magician" อยู่ ทำลายการ์ดเวทมนตร์/กับดักบนสนามอีกฝ่ายทั้งหมดทันที
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="columnCard">
+                <div class="imgCard" style="clear: both; text-align: center;">
+                    <img border="0" data-original-height="614" data-original-width="421" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1akTTvxS-B1hCrYOTFDD-0JSNHZbiHKDu11gZGuoRKUryYu5Psh42pzGBaD-tqJ-I1f7-Bna1AYFkSKoR2wqQWBDiR7AY-9muPYiQYWxNvrbqX-Uy4qRKxV-CvRT0ab-kbd9M9_w5OtHMOadgQl3H_bHG9TfsGIXw6xkusV6TIITXKFCy2mpsqWGF/s1600/Dark%20Magic%20Curtain.jpg">
+                </div>
+            </div>
+
+            <div class="columnInfo">
+                <div class="cardName">
+                    <b><span style="color: #48c293; font-size: 150%; padding: 0px 2px 2px;">Dark Magic Curtain</span></b>
+                    <br>(ม่านมนตร์ดำ)
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <!--Normal-->
+                <div class="cardInfo">
+                    <b> ประเภท:</b> ปกติ
+                    <img alt="Normal - ปกติ" src="https://images3.wikia.nocookie.net/__cb20120920120541/yugioh/images/thumb/0/01/Normal.svg/18px-Normal.svg.png" style="vertical-align: middle; width: 4%;">
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <!--Spell-->
+                <div class="cardEffect">
+                    <div style="font-size: 110%; text-align: center;">
+                        <b style="color: #48c293;">เอฟเฟ็คเวทมนตร์</b>
+                    </div>
+                    <div class="cardEffect">&nbsp;&nbsp;&nbsp;ทำการจ่าย LP ของคุณครึ่งหนึ่ง จากนั้น อัญเชิญพิเศษ "Dark Magician" จากในเด็คของคุณ 1 ใบทันที หลังจากนั้น ในเทิร์นนี้ คุณจะไม่สามารถอัญเชิญมอนสเตอร์ใบอื่นได้ ยกเว้น อัญเชิญแบบเซ็ตคว่ำ
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="columnCard">
+                <div class="imgCard" style="clear: both; text-align: center;">
+                    <img border="0" data-original-height="614" data-original-width="421" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhS0FPpBZBhnbroWbtusEphLMpWsyBhr2Ildt8Sp_IvwKsEEwEtgXkHRF8J79FilwAP1qR_P7YuADeDruJ_TR9e-OQEO3ZzleT96GfTLKFojNfIqIOiuS7npyH4mOs26HVKubJbfzgEI1d_gKjqHWPwkoADL4ZDMeG1nltLCfJFvS4JNBZteuQ3-e8W/s1600/Dark%20Magic%20Twin%20Burst.jpg">
+                </div>
+            </div>
+
+            <div class="columnInfo">
+                <div class="cardName">
+                    <b><span style="color: #48c293; font-size: 150%; padding: 0px 2px 2px;">Dark Magic Twin Burst</span></b>
+                    <br>(แบล็ค ทวิน เบิสต์)
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <!--Normal-->
+                <div class="cardInfo">
+                    <b> ประเภท:</b> ปกติ
+                    <img alt="Normal - ปกติ" src="https://images3.wikia.nocookie.net/__cb20120920120541/yugioh/images/thumb/0/01/Normal.svg/18px-Normal.svg.png" style="vertical-align: middle; width: 4%;">
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <!--Spell-->
+                <div class="cardEffect">
+                    <div style="font-size: 110%; text-align: center;">
+                        <b style="color: #48c293;">เอฟเฟ็คเวทมนตร์</b>
+                    </div>
+                    <div class="cardEffect short_text" id="s11">&nbsp;&nbsp;&nbsp;ทำการเลือก "Dark Magician" บนสนามของคุณ 1 ใบ จากนั้น การ์ดที่ถูกเลือกจะได้รับพลังโจมตีเพิ่มขึ้นเท่ากับผลรวมค่าพลังโจมตีของ "Dark Magician Girl" บนสนามและในสุสานของคุณทั้งหมดทันทีจนกว่าจะจบเทิร์นนี้ คุณสามารถใช้ "Dark
+                        Magic Twin Burst" ได้เทิร์นละครั้งเท่านั้น
+                    </div>
+                    <div style="text-align: center;">
+                        <button class="button" id="myBtnS11" onclick="ToggleReadmore('s11','myBtnS11')">แสดง</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <br>
+
+
+        <div class="row">
+            <div class="columnCard">
+                <div class="imgCard" style="clear: both; text-align: center;">
+                    <img border="0" data-original-height="614" data-original-width="421" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhn13DW9T6edl9iX5CHt_-vdKpC6Cndg1I42ga_ZhL1b0zn1bfyQszcbAQkK4fN1Tp41JbVj8LvNImHa0dJnGnV7BRfgj31QoonNRMVW4Q1Fzza7G9zZ6yugs24HJty6qQhTgaFVO4TkG-q8d_NLIlGf_v6AcHS55CKQr-h16b2Q1YoMNi0pyEZETpX/s1600/Sage%27s%20Stone.jpg">
+                </div>
+            </div>
+
+            <div class="columnInfo">
+                <div class="cardName">
+                    <b><span style="color: #48c293; font-size: 150%; padding: 0px 2px 2px;">Sage's Stone</span></b>
+                    <br>(อัญมณีนักปราชญ์)
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <!--Normal-->
+                <div class="cardInfo">
+                    <b> ประเภท:</b> ปกติ
+                    <img alt="Normal - ปกติ" src="https://images3.wikia.nocookie.net/__cb20120920120541/yugioh/images/thumb/0/01/Normal.svg/18px-Normal.svg.png" style="vertical-align: middle; width: 4%;">
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <!--Spell-->
+                <div class="cardEffect">
+                    <div style="font-size: 110%; text-align: center;">
+                        <b style="color: #48c293;">เอฟเฟ็คเวทมนตร์</b>
+                    </div>
+                    <div class="cardEffect">&nbsp;&nbsp;&nbsp;เมื่อบนสนามของคุณมี "Dark Magician Girl" หงายหน้าอยู่ อัญเชิญพิเศษ "Dark Magician" จากบนมือหรือในเด็คของคุณ 1 ใบทันที
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="columnCard">
+                <div class="imgCard" style="clear: both; text-align: center;">
+                    <img border="0" data-original-height="614" data-original-width="421" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKMd0yrKxLe5PIAFze1N20Pf39rhV6hgX79-s4RfDGcJbn8La_6UYnk92UO4o3TsYXHYIrLJKL795Yira_c6E2BuVsL7zpA2Fp0xVmDxgXMZ8SGvz98ZZCgj2nY1njjr_ghtjXgh3vdYAfuOMHM2Q1GvxG_JPSt9Z7_E7vaq4oY9A5ITWRsZKUMBmk/s1600/Soul%20Servant.jpg">
+                </div>
+            </div>
+
+            <div class="columnInfo">
+                <div class="cardName">
+                    <b><span style="color: #48c293; font-size: 150%; padding: 0px 2px 2px;">Soul Servant</span></b>
+                    <br>(วิญญาณผู้รับใช้)
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <!--Normal-->
+                <div class="cardInfo">
+                    <b> ประเภท:</b> ปกติ
+                    <img alt="Normal - ปกติ" src="https://images3.wikia.nocookie.net/__cb20120920120541/yugioh/images/thumb/0/01/Normal.svg/18px-Normal.svg.png" style="vertical-align: middle; width: 4%;">
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <!--Spell-->
+                <div class="cardEffect">
+                    <div style="font-size: 110%; text-align: center;">
+                        <b style="color: #48c293;">เอฟเฟ็คเวทมนตร์</b>
+                    </div>
+                    <div class="cardEffect short_text" id="s9">&nbsp;&nbsp;&nbsp;ทำการเลือกการ์ดที่มีการระบุถึง "Dark Magician" หรือ "Dark Magician Girl" อยู่ในคำอธิบาย ยกเว้น "Soul Servant" จากบนมือ, ในเด็ค หรือในสุสานของคุณ 1 ใบไปวางไว้บนสุดเด็คทันที ในช่วง Main Phase ของคุณ คุณสามารถนำการ์ดใบนี้จากในสุสานของคุณออกนอกเกม
+                        จากนั้น จั่วการ์ดเท่ากับจำนวน "Dark Magician", "Dark Magician Girl" และมอนสเตอร์ที่มีชื่อว่า "Palladium" บนสนามและในสุสานของคุณที่มีชื่อแตกต่างกันทั้งหมดทันที คุณสามารถใช้เอฟเฟ็คนี้ของ "Soul Servant" ได้เทิร์นละครั้งเท่านั้น
+                    </div>
+                    <div style="text-align: center;">
+                        <button class="button" id="myBtnS9" onclick="ToggleReadmore('s9','myBtnS9')">แสดง</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <br>
+        <div class="row">
+            <div class="columnCard">
+                <div class="imgCard" style="clear: both; text-align: center;">
+                    <img border="0" data-original-height="614" data-original-width="421" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrwuLwHWnpZ5pieHOitlNY_AmiE4bKipOz03ZVdLIK_7M3Gq2lgaYFsC_lV5T7nL31vH1qOUTSkpAEO_4iR6HfjmQzjUSCg2mqDOCudayoGuLZdhdWGeICLsTe8pN3nXYEgKOoEUumUB7gZs9ZYHaln5eoXDibuorZ04REzDBXXDueWtm5O4jJ_Ttg/s1600/The%20Eye%20of%20Timaeus.jpg">
+                </div>
+            </div>
+
+            <div class="columnInfo">
+                <div class="cardName">
+                    <b><span style="color: #48c293; font-size: 150%; padding: 0px 2px 2px;">The Eye of Timaeus</span></b>
+                    <br>(ดวงตาแห่งทีไมออส)
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <!--Normal-->
+                <div class="cardInfo">
+                    <b> ประเภท:</b> ปกติ
+                    <img alt="Normal - ปกติ" src="https://images3.wikia.nocookie.net/__cb20120920120541/yugioh/images/thumb/0/01/Normal.svg/18px-Normal.svg.png" style="vertical-align: middle; width: 4%;">
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <!--Spell-->
+                <div class="cardEffect">
+                    <div style="font-size: 110%; text-align: center;">
+                        <b style="color: #48c293;">เอฟเฟ็คเวทมนตร์</b>
+                    </div>
+                    <div class="cardEffect short_text" id="s8">(การ์ดใบนี้จะถือว่ามีชื่อว่า "Legendary Dragon Timaeus")
+                        <br>&nbsp;&nbsp;&nbsp;ทำการเลือกมอนสเตอร์ที่มีชื่อว่า "Dark Magician" บนสนามของคุณ 1 ใบ จากนั้น อัญเชิญฟิวชั่น มอนสเตอร์ฟิวชั่นที่ระบุว่าใช้การ์ดที่ถูกเลือกเป็นวัตถุดิบในการอัญเชิญจากเอ็กตร้าเด็คของคุณ 1 ใบทันที โดยใช้การ์ดที่ถูกเลือกเป็นวัตถุดิบในการอัญเชิญ
+                        คุณสามารถใช้ "The Eye of Timaeus" ได้เทิร์นละครั้งเท่านั้น
+                    </div>
+                    <div style="text-align: center;">
+                        <button class="button" id="myBtnS8" onclick="ToggleReadmore('s8','myBtnS8')">แสดง</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <br>
+        <div class="row">
+            <div class="columnCard">
+                <div class="imgCard" style="clear: both; text-align: center;">
+                    <img border="0" data-original-height="614" data-original-width="421" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTy_1zA_y6tiwGA4hQdsjwm7d6mL9QB5uO6VYqp3eDPbmpgyeQiA0mele987oOkSlYU3Pmtlkt89rHKXgnzI5sGjHW6hoDbiy1_p3M6DQyR5bjcs2hSCWP2PLZMzGBGltVesCi7MgcTQ0ol6QlclEpzf1SpBbN1xOi5N0I68iHjPBQIj4X1I-zLLZb/s1600/Thousand%20Knives.jpg">
+                </div>
+            </div>
+
+            <div class="columnInfo">
+                <div class="cardName">
+                    <b><span style="color: #48c293; font-size: 150%; padding: 0px 2px 2px;">Thousand Knives</span></b>
+                    <br>(มีดพันเล่ม)
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <!--Normal-->
+                <div class="cardInfo">
+                    <b> ประเภท:</b> ปกติ
+                    <img alt="Normal - ปกติ" src="https://images3.wikia.nocookie.net/__cb20120920120541/yugioh/images/thumb/0/01/Normal.svg/18px-Normal.svg.png" style="vertical-align: middle; width: 4%;">
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <!--Spell-->
+                <div class="cardEffect">
+                    <div style="font-size: 110%; text-align: center;">
+                        <b style="color: #48c293;">เอฟเฟ็คเวทมนตร์</b>
+                    </div>
+                    <div class="cardEffect">&nbsp;&nbsp;&nbsp;เมื่อบนสนามของคุณมี "Dark Magician" อยู่ เลือกทำลายมอนสเตอร์บนสนามอีกฝ่าย 1 ใบทันที
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <br>
+        </span>
+        <div class="row">
+            <div class="columnCard">
+                <div class="imgCard" style="clear: both; text-align: center;">
+                    <img border="0" data-original-height="614" data-original-width="421" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgzvNET7SgtPP-_sICMEvdc1FslQKZWYGYp3KLJgHVyH1SnK08ofTGFfTUvmIXo7ivxEHkL-klyNLbmXwW4fGFsEF5mpHuSWjoPnWWtbDQ7Gx6ZYm-E3CjU6VwWEuSyzevH6IpPx-wxkkTaUSO6hBXO-N1ofaRkMgOt1EPHbFJvc85wQyZonoyq6y4D/s1600/Dark%20Magical%20Circle.jpg">
+                </div>
+            </div>
+
+            <div class="columnInfo">
+                <div class="cardName">
+                    <b><span style="color: #48c293; font-size: 150%; padding: 0px 2px 2px;">Dark Magical Circle</span></b>
+                    <br>(วงเวทมนตร์ดำ)
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <!--Continuous-->
+                <div class="cardInfo">
+                    <b> ประเภท:</b> ต่อเนื่อง
+                    <img alt="Continuous - ต่อเนื่อง" src="https://static2.wikia.nocookie.net/__cb20120920115208/yugioh/images/thumb/7/7c/Continuous.svg/18px-Continuous.svg.png" style="vertical-align: middle; width: 4%;">
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <!--Spell-->
+                <div class="cardEffect">
+                    <div style="font-size: 110%; text-align: center;">
+                        <b style="color: #48c293;">เอฟเฟ็คเวทมนตร์</b>
+                    </div>
+                    <div class="cardEffect short_text" id="s7">&nbsp;&nbsp;&nbsp;เมื่อการ์ดใบนี้ถูกเปิดใช้งาน ดูการ์ดใบบนสุดเด็คของคุณ 3 ใบ จากนั้น คุณสามารถเลือก "Dark Magician" หรือการ์ดเวทมนตร์กับดักที่ระบุถึง "Dark Magician" ในคำอธิบายจากที่คุณด้วยเอฟเฟ็ค 1 ใบแสดงให้ดู แล้วนำมันเพิ่มขึ้นมือทันที
+                        หลังจากนั้น เอาการ์ดที่เหลือวางไว้บนสุดเด็คในลำดับใดก็ได้ เมื่อมีการอัญเชิญ "Dark Magician" แบบปกติหรือพิเศษลงบนสนามของคุณ(ยกเว้นช่วงความเสียหาย) คุณสามารถเลือกการ์ดบนสนามอีกฝ่าย 1 ใบนำออกนอกเกมทันที คุณสามารถใช้เอฟเฟ็คแต่ละอย่างของ
+                        "Dark Magical Circle" ได้เทิร์นละครั้งเท่านั้น
+                    </div>
+                    <div style="text-align: center;">
+                        <button class="button" id="myBtnS7" onclick="ToggleReadmore('s7','myBtnS7')">แสดง</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="columnCard">
+                <div class="imgCard" style="clear: both; text-align: center;">
+                    <img border="0" data-original-height="614" data-original-width="421" src="https://blogger.googleusercontent.com/img/a/AVvXsEh68yVPu7Sll6y-ZrxdtngWdAPdCkcnG3ngUSZiOwRM70F-Z_UhUZ_6yjXPBPunL_FlvnOcZaaZ_z2n9f6U_eHrxJkfAA8vHsJCiICZfjHlwZcsyLHTRdF895fXtI6_TnrCQf2QDCc1o7KMQ2qCu5U9udk5VVMfLvg7foVwWTJgF-spzB2m3hLleaUv">
+                </div>
+            </div>
+
+            <div class="columnInfo">
+                <div class="cardName">
+                    <b><span style="color: #48c293; font-size: 150%; padding: 0px 2px 2px;">Strength in Unity</span></b>
+                    <br>(รวมพลังเป็นหนึ่งเดียว)
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <!--Continuous-->
+                <div class="cardInfo">
+                    <b> ประเภท:</b> ต่อเนื่อง
+                    <img alt="Continuous - ต่อเนื่อง" src="https://static2.wikia.nocookie.net/__cb20120920115208/yugioh/images/thumb/7/7c/Continuous.svg/18px-Continuous.svg.png" style="vertical-align: middle; width: 4%;">
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <!--Spell-->
+                <div class="cardEffect">
+                    <div style="font-size: 110%; text-align: center;">
+                        <b style="color: #48c293;">เอฟเฟ็คเวทมนตร์</b>
+                    </div>
+                    <div class="cardEffect short_text" id="s6">&nbsp;&nbsp;&nbsp;เมื่อมีการอัญเชิญมอนสเตอร์แบบฟิวชั่นหรือพิธีกรรม ที่ใช้ "Blue-Eyes White Dragon"</a> หรือ "Dark Magician" ในการอัญเชิญ คุณสามารถเลือกการ์ดมอนสเตอร์บนสนามหรือในสุสานอีกฝ่าย 1 ใบนำออกนอกเกมทันที คุณสามารถส่งการ์ดใบนี้ที่หงายหน้าบนสนามลงสุสาน
+                        จากนั้น เลือกการ์ดมอนสเตอร์ปกติเลเวล 7 ขึ้นไปจากในสุสานของคุณ 1 ใบ โดยเลือกได้ว่าจะนำการ์ดใบนั้นเพิ่มขึ้นมือหรือสับเข้าเด็คของคุณ คุณสามารถใช้เอฟเฟ็คแต่ละอย่างของ "Strength in Unity" ได้เทิร์นละครั้งเท่านั้น
+                    </div>
+                    <div style="text-align: center;">
+                        <button class="button" id="myBtnS6" onclick="ToggleReadmore('s6','myBtnS6')">แสดง</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <br>
+        <div class="row">
+            <div class="columnCard">
+                <div class="imgCard" style="clear: both; text-align: center;">
+                    <img border="0" data-original-height="614" data-original-width="421" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeSDfuqaKSmVJqm9NspQ4sRfVvDc0amHoaW3y17k-QyvELuAWVHeWR84C2WUhUIbV77ohh2lASWGlwfqPyr5U57V4VRrChBhyPLE6T0zSdQCysmq7COH2-6eFelh2-2xUzbsCzPHM_scHJWoosiRbI-fV0KnGQWbT-YkhRaBnTrKJUAMoyOK01-rQI/s1600/Magic%20Formula.jpg">
+                </div>
+            </div>
+
+            <div class="columnInfo">
+                <div class="cardName">
+                    <b><span style="color: #48c293; font-size: 150%; padding: 0px 2px 2px;">Magic Formula</span></b>
+                    <br>(ตำราวิชาเวทย์)
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <!--Equip-->
+                <div class="cardInfo">
+                    <b> ประเภท:</b> สวมใส่
+                    <img alt="Equip - สวมใส่" src="https://images2.wikia.nocookie.net/__cb20120920115846/yugioh/images/thumb/9/90/Equip.svg/18px-Equip.svg.png" style="vertical-align: middle; width: 4%;">
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <!--Spell-->
+                <div class="cardEffect">
+                    <div style="font-size: 110%; text-align: center;">
+                        <b style="color: #48c293;">เอฟเฟ็คเวทมนตร์</b>
+                    </div>
+                    <div class="cardEffect">&nbsp;&nbsp;&nbsp;สวมใส่ให้เฉพาะ "Dark Magician" หรือ "Dark Magician Girl" เท่านั้น มอนสเตอร์ที่สวมการ์ดใบนี้จะได้รับพลังโจมตีเพิ่มขึ้น 700 เมื่อการ์ดใบนี้ถูกส่งลงสุสานจากบนสนาม คุณจะได้รับ LP เพิ่ม 1000 ทันที
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <br>
+        <!--QuickPlay--><span>
+              
+              <div class="row">
+            <div class="columnCard">
+              <div class="imgCard" style="clear: both; text-align: center;">
+                <img border="0" data-original-height="614" data-original-width="421" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWT2g4E6JRwCu1pxtSuXgzd09nzEpVsxtXhh7NfT65h6ZfL2bwBEWLj_Khiwlw6t_I2HdukPTyU84sUrtM5_kEvWD6rCZy0wSPh842bDBZVzj8X9mzr-VSPaX7o3oJmROa7e8Rb5EkbbuwYZ7RpBrFdo2I0mOwd-GxBDGwylL-fF4Ylmy-NKX-oMOk/s1600/Chaos%20Scepter%20Blast.jpg">
+              </div>
+            </div>
+        
+            <div class="columnInfo">
+              <div class="cardName">
+                <b><span style="color: #48c293; font-size: 150%; padding: 0px 2px 2px;">Chaos Scepter Blast</span></b>
+        <br>(เวทย์แห่งการทำลายล้าง - เดธ อัลติม่า)
+        </div>
+        <div style="padding: 5px;"></div>
+
+        <!--QuickPlay-->
+        <div class="cardInfo">
+            <b> ประเภท:</b> ความเร็วสูง
+            <img alt="Quick-Play - ความเร็วสูง" src="https://static3.wikia.nocookie.net/__cb20120920115230/yugioh/images/thumb/0/05/Quick-Play.svg/18px-Quick-Play.svg.png" style="vertical-align: middle; width: 4%;">
+        </div>
+        <div style="padding: 5px;"></div>
+
+        <!--Spell-->
+        <div class="cardEffect">
+            <div style="font-size: 110%; text-align: center;">
+                <b style="color: #48c293;">เอฟเฟ็คเวทมนตร์</b>
+            </div>
+            <div class="cardEffect short_text" id="s5">&nbsp;&nbsp;&nbsp;เมื่อบนสนามของคุณมีมอนสเตอร์เผ่าจอมเวทย์เลเวล 8 ขึ้นไปอยู่ ทำการเลือกการ์ดบนสนาม 1 ใบนำออกนอกเกมทันทีในสภาพเซ็ตคว่ำ ถ้าการ์ดใบนี้อยู่บนโซนเวทมนตร์/กับดักของเจ้าของจริงของมันแล้วมันถูกทำลายโดยเอฟเฟ็คการ์ดอีกฝ่าย คุณสามารถอัญเชิญพิเศษ
+                "Magician of Black Chaos" หรือ "Dark Magician of Chaos" จากในเด็คของคุณ 1 ใบได้ทันทีโดยไม่สนใจเงื่อนไขใดๆ ทั้งสิ้น
+            </div>
+            <div style="text-align: center;">
+                <button class="button" id="myBtnS5" onclick="ToggleReadmore('s5','myBtnS5')">แสดง</button>
+            </div>
+        </div>
+
+        </div>
+
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="columnCard">
+                <div class="imgCard" style="clear: both; text-align: center;">
+                    <img border="0" data-original-height="614" data-original-width="421" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhanK5mTXtH9EXYVOnoJ042pHyzhROpG2e-AYRGWcZdMyy7-zcgiyogWXzvnLpRLqKUCXcOkAmGrV5RvUkASuFuVIhVCBHMuy1Rk6LXwNrayYKVDnQpTITj4L_eQlYd7Zcsjs_hBA3cL-BVkSmRBc2MqlAZR6DNXCGdL6G0Mttec-PWyWkIARPwTOZE/s1600/Dark%20Burning%20Magic.jpg">
+                </div>
+            </div>
+
+            <div class="columnInfo">
+                <div class="cardName">
+                    <b><span style="color: #48c293; font-size: 150%; padding: 0px 2px 2px;">Dark Burning Magic</span></b>
+                    <br>(แบล็ค เบิร์นนิ่ง เมจิก)
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <!--QuickPlay-->
+                <div class="cardInfo">
+                    <b> ประเภท:</b> ความเร็วสูง
+                    <img alt="Quick-Play - ความเร็วสูง" src="https://static3.wikia.nocookie.net/__cb20120920115230/yugioh/images/thumb/0/05/Quick-Play.svg/18px-Quick-Play.svg.png" style="vertical-align: middle; width: 4%;">
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <!--Spell-->
+                <div class="cardEffect">
+                    <div style="font-size: 110%; text-align: center;">
+                        <b style="color: #48c293;">เอฟเฟ็คเวทมนตร์</b>
+                    </div>
+                    <div class="cardEffect">&nbsp;&nbsp;&nbsp;เมื่อบนสนามของคุณมีมอนสเตอร์ที่มีชื่อตั้งต้นว่า "Dark Magician" และ "Dark Magician Girl" อยู่ ทำลายการ์ดบนสนามอีกฝ่ายทั้งหมดทันที
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="columnCard">
+                <div class="imgCard" style="clear: both; text-align: center;">
+                    <img border="0" data-original-height="614" data-original-width="421" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEvR2F8tc5ypoGfdbcAHjqFxogl_VM063N1NrRePydeh0o8SWpvhHfW7NASXZwsv31z5mbtK9j69huCD8oyHymsWV5lGQsNYieUgAcLrPEXlXFolozbcNrzWfEReaNgnRSUMpcXUQaT09UPGbXfd6uTWX0M7v4CIuMwXOB5eYbm6HPV4GxOswClJ21/s1600/Dark%20Magic%20Expanded.jpg">
+                </div>
+            </div>
+
+            <div class="columnInfo">
+                <div class="cardName">
+                    <b><span style="color: #48c293; font-size: 150%; padding: 0px 2px 2px;">Dark Magic Expanded</span></b>
+                    <br>(ขยายเวทย์มนตร์ดำ)
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <!--QuickPlay-->
+                <div class="cardInfo">
+                    <b> ประเภท:</b> ความเร็วสูง
+                    <img alt="Quick-Play - ความเร็วสูง" src="https://static3.wikia.nocookie.net/__cb20120920115230/yugioh/images/thumb/0/05/Quick-Play.svg/18px-Quick-Play.svg.png" style="vertical-align: middle; width: 4%;">
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <!--Spell-->
+                <div class="cardEffect">
+                    <div style="font-size: 110%; text-align: center;">
+                        <b style="color: #48c293;">เอฟเฟ็คเวทมนตร์</b>
+                    </div>
+                    <div class="cardEffect short_text" id="s4">&nbsp;&nbsp;&nbsp;เอฟเฟ็คของการ์ดใบนี้จะทำงานตามลำดับภายใต้เงื่อนไขจำนวน "Dark Magician" หรือ "Dark Magician Girl" บนสนามและในสุสานของคุณทั้งหมดดังนี้
+                        <br>
+                        <br>● มี 1 ใบขึ้นไป: เลือกมอนสเตอร์เผ่าจอมเวทย์ธาตุมืดบนสนาม 1 ใบ การ์ดที่ถูกเลือกใบนั้นจะได้รับพลังโจมตีเพิ่มขึ้น 1000 ทันทีจนกว่าจะจบเทิร์นนี้
+                        <br>● มี 2 ใบขึ้นไป: ในเทิร์นนี้ อีกฝ่ายจะไม่สามารถเปิดใช้หรือใช้งานเอฟเฟ็คการ์ดได้ในขณะที่คุณเปิดใช้งานเอฟเฟ็คการ์ด และการ์ดเวทมนตร์/กับดักบนสนามของคุณจะไม่ถูกทำลายจากเอฟเฟ็คการ์ดอีกฝ่ายอีกด้วย
+                        <br>● มี 3 ใบขึ้นไป: มอนสเตอร์เผ่าจอมเวทย์ธาตุมืดบสนามของคุณทั้งหมดจะไม่รับเอฟเฟ็คการ์ดอีกฝ่ายจนกว่าจะจบเทิร์นนี้
+                    </div>
+                    <div style="text-align: center;">
+                        <button class="button" id="myBtnS4" onclick="ToggleReadmore('s4','myBtnS4')">แสดง</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="columnCard">
+                <div class="imgCard" style="clear: both; text-align: center;">
+                    <img border="0" data-original-height="614" data-original-width="421" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLGGQPxWD6H3EfzI8qYGMW4Kyp-4RE8l1UffyO2pCWndsB5eRMr90r22xM1LnEVc_cfNq8O2NTm52EhvzXgz6YGOW0fzfQkNrqYAsoQhqkC_IBFBumOWa2hZmVQmAQ2pPcwk4lpXTSYRDIKlon4xgrZW76xnvIGg3w23zhezHJF6R7bUG8UpxUFJm8/s1600/Dark%20Magic%20Inheritance.jpg">
+                </div>
+            </div>
+
+            <div class="columnInfo">
+                <div class="cardName">
+                    <b><span style="color: #48c293; font-size: 150%; padding: 0px 2px 2px;">Dark Magic Inheritance</span></b>
+                    <br>(สืบทอดมนตร์ดำ)
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <!--QuickPlay-->
+                <div class="cardInfo">
+                    <b> ประเภท:</b> ความเร็วสูง
+                    <img alt="Quick-Play - ความเร็วสูง" src="https://static3.wikia.nocookie.net/__cb20120920115230/yugioh/images/thumb/0/05/Quick-Play.svg/18px-Quick-Play.svg.png" style="vertical-align: middle; width: 4%;">
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <!--Spell-->
+                <div class="cardEffect">
+                    <div style="font-size: 110%; text-align: center;">
+                        <b style="color: #48c293;">เอฟเฟ็คเวทมนตร์</b>
+                    </div>
+                    <div class="cardEffect short_text" id="s3">&nbsp;&nbsp;&nbsp;ทำการเลือกการ์ดเวทมนตร์ในสุสานของคุณ 2 ใบนำออกนอกเกม จากนั้น เลือกการ์ดเวทมนตร์/กับดักที่มีการระบุถึง "Dark Magician" หรือ "Dark Magician Girl" อยู่ในคำอธิบาย ยกเว้น "Dark Magic Inheritance" จากในเด็คของคุณ 1 ใบเพิ่มขึ้นมือทันที
+                        คุณสามารถใช้ "Dark Magic Inheritance" ได้เทิร์นละครั้งเท่านั้น
+                    </div>
+                    <div style="text-align: center;">
+                        <button class="button" id="myBtnS3" onclick="ToggleReadmore('s3','myBtnS3')">แสดง</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="columnCard">
+                <div class="imgCard" style="clear: both; text-align: center;">
+                    <img border="0" data-original-height="614" data-original-width="421" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgXWJVJYpBYu5cWUP_EYnmc_ScEvf3jVFGJWUaCbqjdq8v0rV99IVFgetU-FG2tESh7v_7WRfEDs5WjmtpgY5ybA5zkhPNKr9wuCFT2ZsBvN9wwUd5mBsLZg4_FDgwsgvme2o6OB-VSgZnuTLNRf2vqu0o_uHSbAYNuttHMLwIx2bfIMNtCtMx5QjZ6/s1600/Dedication%20through%20Light%20and%20Darkness.jpg">
+                </div>
+            </div>
+
+            <div class="columnInfo">
+                <div class="cardName">
+                    <b><span style="color: #48c293; font-size: 150%; padding: 0px 2px 2px;">Dedication through Light and Darkness</span></b>
+                    <br>(การอุทิศตนให้กับแสงสว่างและความมืด)
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <!--QuickPlay-->
+                <div class="cardInfo">
+                    <b> ประเภท:</b> ความเร็วสูง
+                    <img alt="Quick-Play - ความเร็วสูง" src="https://static3.wikia.nocookie.net/__cb20120920115230/yugioh/images/thumb/0/05/Quick-Play.svg/18px-Quick-Play.svg.png" style="vertical-align: middle; width: 4%;">
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <!--Spell-->
+                <div class="cardEffect">
+                    <div style="font-size: 110%; text-align: center;">
+                        <b style="color: #48c293;">เอฟเฟ็คเวทมนตร์</b>
+                    </div>
+                    <div class="cardEffect">&nbsp;&nbsp;&nbsp;ทำการสังเวย "Dark Magician" 1 ใบ จากนั้น อัญเชิญพิเศษ "Dark Magician of Chaos" จากบนมือ, ในเด็ค หรือในสุสานของคุณ 1 ใบทันที
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="columnCard">
+                <div class="imgCard" style="clear: both; text-align: center;">
+                    <img border="0" data-original-height="614" data-original-width="421" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQT2HetITUIewo6YBNjvf8EaO_97Cn-mcRIYyewOsMrOEHiXGVmTp1qQvf9z-xeWfnj7WwykLoVTtRSdm_OdrXhSOpOXKJ3eym3xk1PeyQhIRZStEgvje1OiAssDU5ViLZR8CmyAt7hNUzM3K1nRapuyYuUv0iF4Z3jvU8FYC4GzCVnOIFT2u-jN7K/s1600/Illusion%20Magic.jpg">
+                </div>
+            </div>
+
+            <div class="columnInfo">
+                <div class="cardName">
+                    <b><span style="color: #48c293; font-size: 150%; padding: 0px 2px 2px;">Illusion Magic</span></b>
+                    <br>(อิลลูชั่น เมจิก)
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <!--QuickPlay-->
+                <div class="cardInfo">
+                    <b> ประเภท:</b> ความเร็วสูง
+                    <img alt="Quick-Play - ความเร็วสูง" src="https://static3.wikia.nocookie.net/__cb20120920115230/yugioh/images/thumb/0/05/Quick-Play.svg/18px-Quick-Play.svg.png" style="vertical-align: middle; width: 4%;">
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <!--Spell-->
+                <div class="cardEffect">
+                    <div style="font-size: 110%; text-align: center;">
+                        <b style="color: #48c293;">เอฟเฟ็คเวทมนตร์</b>
+                    </div>
+                    <div class="cardEffect">&nbsp;&nbsp;&nbsp;ทำการสังเวยมอนสเตอร์เผ่าจอมเวทย์ 1 ใบ จากนั้น เลือก "Dark Magician" จากในเด็คหรือในสุสานของคุณสูงสุด 2 ใบเพิ่มขึ้นมือทันที คุณสามารถใช้ "Illusion Magic" ได้เทิร์นละครั้งเท่านั้น
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="columnCard">
+                <div class="imgCard" style="clear: both; text-align: center;">
+                    <img border="0" data-original-height="614" data-original-width="421" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpW2Prfa0ETdY0TVUj3NXplztExXsjC1y0x4ZlkfqutSMtLAGfSODQvwcDsUFx7DbGMp6bmwpwT3uYgYJcqaVlHl5XfaTQwr3Wz8wRo5rW9fVk9U952a1Xt9M-05W95Apv8pR_NFeZBIb8dwDrIiZZIk2YVsi8ZvJ8isv0WuSbVM5AAGNMVkX86vHA/s1600/Secrets%20of%20Dark%20Magic.jpg">
+                </div>
+            </div>
+
+            <div class="columnInfo">
+                <div class="cardName">
+                    <b><span style="color: #48c293; font-size: 150%; padding: 0px 2px 2px;">Secrets of Dark Magic</span></b>
+                    <br>(พิธีลับแห่งมนตร์ดำ)
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <!--QuickPlay-->
+                <div class="cardInfo">
+                    <b> ประเภท:</b> ความเร็วสูง
+                    <img alt="Quick-Play - ความเร็วสูง" src="https://static3.wikia.nocookie.net/__cb20120920115230/yugioh/images/thumb/0/05/Quick-Play.svg/18px-Quick-Play.svg.png" style="vertical-align: middle; width: 4%;">
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <!--Spell-->
+                <div class="cardEffect">
+                    <div style="font-size: 110%; text-align: center;">
+                        <b style="color: #48c293;">เอฟเฟ็คเวทมนตร์</b>
+                    </div>
+                    <div class="cardEffect short_text" id="s2">&nbsp;&nbsp;&nbsp;คุณสามารถเลือกใช้เอฟเฟ็คอย่างใดอย่างหนึ่งต่อไปนี้ดังนี้
+                        <br>
+                        <br>● อัญเชิญฟิวชั่น มอนสเตอร์ฟิวชั่นจากในเอ็กตร้าเด็คของคุณ 1 ใบ โดยใช้การ์ดวัตถุดิบจากบนมือหรือบนสนามของคุณในการอัญเชิญ และต้องมี "Dark Magician" และ "Dark Magician Girl" เป็นวัตถุดิบรวมอยู่ด้วย
+                        <br>● อัญเชิญพิธีกรรม มอนสเตอร์พิธีกรรมจากบนมือของคุณ 1 ใบ โดยทำการสังเวยการ์ดมอนสเตอร์จากบนมือหรือบนสนามของคุณให้มีผลรวมเลเวลให้มากกว่าหรือเท่ากับเลเวลของมอนสเตอร์ที่จะอัญเชิญ และต้องมี "Dark Magician" และ "Dark Magician Girl"
+                        เป็นเครื่องสังเวยรวมอยู่ด้วย
+                    </div>
+                    <div style="text-align: center;">
+                        <button class="button" id="myBtnS2" onclick="ToggleReadmore('s2','myBtnS2')">แสดง</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <br>
+
+        </span>
+        <div class="row">
+            <div class="columnCard">
+                <div class="imgCard" style="clear: both; text-align: center;">
+                    <img border="0" data-original-height="614" data-original-width="421" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8WZgFTsL60uJ0x01xlr5KsSgNJn-lorP_k27wrrtgSIc7SCB9vY1T850QKN7vVyyjs5wokg32kTYToX0gY8MWefVct63Vh6bIzdO9hv5u9Zc-Jt9B4cDad6Ro15x3OHh47h2P_s-aBFnc6d3QZ0bxLctex6UBk_iyrCfxeRyajNDgzFthD2zjBqhp/s1600/Magician%27s%20Salvation.jpg">
+                </div>
+            </div>
+
+            <div class="columnInfo">
+                <div class="cardName">
+                    <b><span style="color: #48c293; font-size: 150%; padding: 0px 2px 2px;">Magician's Salvation</span></b>
+                    <br>(เมจิกเชี่ยน ซาลเวชั่น)
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <!--Field-->
+                <div class="cardInfo">
+                    <b> ประเภท:</b> สนาม
+                    <img alt="Field - สนาม" src="https://images2.wikia.nocookie.net/__cb20120920120157/yugioh/images/thumb/1/14/Field.svg/18px-Field.svg.png" style="vertical-align: middle; width: 4%;">
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <!--Spell-->
+                <div class="cardEffect">
+                    <div style="font-size: 110%; text-align: center;">
+                        <b style="color: #48c293;">เอฟเฟ็คเวทมนตร์</b>
+                    </div>
+                    <div class="cardEffect short_text" id="s1">&nbsp;&nbsp;&nbsp;เมื่อการ์ดใบนี้ถูกเปิดใช้งาน คุณสามารถเลือก "Eternal Soul" จากในเด็คของคุณ 1 ใบมาเซ็ตคว่ำบนสนามของคุณได้ทันที เมื่อคุณทำการอัญเชิญ "Dark Magician" หรือ "Dark Magician Girl" แบบปกติหรือพิเศษ(ยกเว้นช่วงความเสียหาย)
+                        คุณสามารถเลือกมอนสเตอร์ใบนั้น(ถ้าอัญเชิญหลายใบให้เลือกแค่ 1 ใบ) จากนั้น อัญเชิญพิเศษ "Dark Magician" หรือ "Dark Magician Girl" ที่มีชื่อแตกต่างกันกับการ์ดที่ถูกเลือกด้วยเอฟเฟ็คนี้จากในสุสานของคุณ 1 ใบทันที คุณสามารถใช้เอฟเฟ็คนี้ของ
+                        "Magician's Salvation" ได้เทิร์นละครั้งเท่านั้น คุณสามารถใช้ "Magician's Salvation" ได้เทิร์นละครั้งเท่านั้น
+                    </div>
+                    <div style="text-align: center;">
+                        <button class="button" id="myBtnS1" onclick="ToggleReadmore('s1','myBtnS1')">แสดง</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <br>
+        <div class="row">
+            <div class="columnCard">
+                <div class="imgCard" style="clear: both; text-align: center;">
+                    <img border="0" data-original-height="614" data-original-width="421" src="https://blogger.googleusercontent.com/img/a/AVvXsEhO7rf4EOC1hSih11D6xpUr6mF8WIJFPMKNuMIZLIlMBEOXoSP5U5KqhmeVzmPIIzw5Jc1NAu8KsgD_xBv2EJ5zhQ6ur7WxGR0mK73zXv73jyDCS05iXLm75rdp65iHYMfdwwn-aa0-LbJ8aiHo8cye_51cRa2uWSOsDWtD64A4_p-10LjmUCxpB6RF">
+                </div>
+            </div>
+
+            <div class="columnInfo">
+                <div class="cardName">
+                    <b><span style="color: #48c293; font-size: 150%; padding: 0px 2px 2px;">Black Magic Ritual</span></b>
+                    <br>(พิธีกรรมจอมเวทย์มนตร์ดำ)
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <!--Ritual-->
+                <div class="cardInfo">
+                    <b> ประเภท:</b> พิธีกรรม
+                    <img alt="Ritual - พิธีกรรม" src="https://img2.wikia.nocookie.net/__cb20120920115233/yugioh/images/thumb/f/f5/Ritual.svg/18px-Ritual.svg.png" style="vertical-align: middle; width: 4%;">
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <!--Spell-->
+                <div class="cardEffect">
+                    <div style="font-size: 110%; text-align: center;">
+                        <b style="color: #48c293;">เอฟเฟ็คเวทมนตร์</b>
+                    </div>
+                    <div class="cardEffect">&nbsp;&nbsp;&nbsp;การ์ดใบนี้ใช้สำหรับทำการอัญเชิญพิธีกรรม "Magician of Black Chaos" โดยคุณต้องสังเวยการ์ดมอนสเตอร์จากมือหรือบนสนามของคุณ ให้มีผลรวมเลเวลมากกว่าหรือเท่ากับ 8
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <br>
+        <div class="row">
+            <div class="columnCard">
+                <div class="imgCard" style="clear: both; text-align: center;">
+                    <img border="0" data-original-height="614" data-original-width="421" src="https://blogger.googleusercontent.com/img/a/AVvXsEgLWRkqLAkO6_Txmezgb3rg-Ze0yuGies1xrcD0PUZZmvmaCPae-BPBuV5ThU95OqHK-H4sK7FEzwH3mJKFcEMlAuj2s0qQR90D-_LeMibViw7Z2aQCFeXh2iGyBjtk-HUwkfr6Yyio-tUU6JV4-zgvC7x5GrpW8uDVZ_DxlrDg_Yd9ip56-Xby0fOa">
+                </div>
+            </div>
+
+            <div class="columnInfo">
+                <div class="cardName">
+                    <b><span style="color: #48c293; font-size: 150%; padding: 0px 2px 2px;">Chaos Form</span></b>
+                    <br>(คาออส ฟอร์ม)
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <!--Ritual-->
+                <div class="cardInfo">
+                    <b> ประเภท:</b> พิธีกรรม
+                    <img alt="Ritual - พิธีกรรม" src="https://img2.wikia.nocookie.net/__cb20120920115233/yugioh/images/thumb/f/f5/Ritual.svg/18px-Ritual.svg.png" style="vertical-align: middle; width: 4%;">
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <!--Spell-->
+                <div class="cardEffect">
+                    <div style="font-size: 110%; text-align: center;">
+                        <b style="color: #48c293;">เอฟเฟ็คเวทมนตร์</b>
+                    </div>
+                    <div class="cardEffect short_text" id="s0">&nbsp;&nbsp;&nbsp;การ์ดใบนี้ใช้สำหรับอัญเชิญพิธีกรรม มอนสเตอร์ที่มีชื่อว่า "Chaos" หรือ <a href="https://ygokarlima.blogspot.com/2022/09/yu-gi-oh-card-series-black-luster.html">"Black Luster Soldier"</a> โดยคุณต้องสังเวยการ์ดมอนสเตอร์จากบนมือหรือบนสนาม
+                        หรือเลือก "Blue-Eyes White Dragon" หรือ "Dark Magician" จากในสุสานของคุณออกเกม โดยให้มีผลรวมเลเวลของการ์ดเท่ากับเลเวลของมอนสเตอร์พิธีกรรมที่คุณจะอัญเชิญ
+                    </div>
+                    <div style="text-align: center;">
+                        <button class="button" id="myBtnS0" onclick="ToggleReadmore('s0','myBtnS0')">แสดง</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        </span>
+    </section>
+
+    <!--Trap Card Bar-->
+    <section id="trap_card">
+        <p class="separator" style="clear: both; text-align: center;">
+            <img alt="" border="0" class="imgBar" src="https://blogger.googleusercontent.com/img/a/AVvXsEjjgpDz5gF_SNvapwiwibu4wYEd9oUh7IBGdAekpHs1f7Wr-vI_kAT-GkmY7262BKHJi2z7Wk1_9UqUCznaPSowR2djzwkS8KpJvd4y95gNSSxvMLzy_H5Bd6kjx0zOUtrEd8RyZFVsKbO9vi-X4RykwaikyDzEXZtjQngt95qcpVpyswGO7XwggcC7"
+                width="100%">
+            <img alt="" border="0" class="imgBarMobile" src="https://blogger.googleusercontent.com/img/a/AVvXsEjjgpDz5gF_SNvapwiwibu4wYEd9oUh7IBGdAekpHs1f7Wr-vI_kAT-GkmY7262BKHJi2z7Wk1_9UqUCznaPSowR2djzwkS8KpJvd4y95gNSSxvMLzy_H5Bd6kjx0zOUtrEd8RyZFVsKbO9vi-X4RykwaikyDzEXZtjQngt95qcpVpyswGO7XwggcC7"
+                style="margin-left: auto; margin-right: auto; min-height: 50px; object-fit: cover; width: 100%;">
+        </p>
+        <span>
+            
+              <div class="row">
+            <div class="columnCard">
+              <div class="imgCard" style="clear: both; text-align: center;">
+                <img border="0" data-original-height="614" data-original-width="421" src="https://blogger.googleusercontent.com/img/a/AVvXsEh4I0s_1lo7ETXHV6JpjO1z6NA1MwT82WlIYjvhuJbzGsarLCe0gbOKM4tU0IVJixO5tIzbWD1WFeuyddq9gc4ctW7ojrDN2ykE5epC6YTXmaTOO7T0FrRVen0G3wQIwE8sljxLuEEsR61sPoBkDlnOZCBk-MBY4R_fEVDvay2u2vB_o3du9-jo4esZ">
+              </div>
+            </div>
+        
+            <div class="columnInfo">
+              <!--Info-->
+              <div class="cardName">
+                <b><span style="color: #ff50ab; font-size: 150%; padding: 0px 2px 2px;">Destined Rivals</span></b>
+        <br>(คู่ปรับแห่งโชคชะตา)
+        </div>
+        <div style="padding: 5px;"></div>
+
+        <!--Normal-->
+        <div class="cardInfo">
+            <b> ประเภท:</b> ปกติ
+            <img alt="Normal - ปกติ" src="https://images3.wikia.nocookie.net/__cb20120920120541/yugioh/images/thumb/0/01/Normal.svg/18px-Normal.svg.png" style="vertical-align: middle; width: 4%;">
+        </div>
+        <div style="padding: 5px;"></div>
+
+        <div class="cardEffect">
+            <div style="font-size: 110%; text-align: center;">
+                <b style="color: #ff50ab;">เอฟเฟ็คกับดัก</b>
+            </div>
+            <div class="cardEffect">&nbsp;&nbsp;&nbsp;เมื่อบนสนามของคุณมี "Blue-Eyes White Dragon"</a> หรือ "Dark Magician" อยู่ ทำการยกเลิกเอฟเฟ็คการ์ดมอนสเตอร์ที่หงายหน้าอยู่บนสนามอีกฝ่ายทั้งหมดทันทีจนกว่าจะจบเทิร์นนี้ คุณสามารถใช้ "Destined Rivals" ได้เทิร์นละครั้งเท่านั้น
+            </div>
+        </div>
+        </div>
+
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="columnCard">
+                <div class="imgCard" style="clear: both; text-align: center;">
+                    <img border="0" data-original-height="614" data-original-width="421" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXvpbrQpYgdxb67Emj-Vzjk6NobeK9fqSR_Orj_zYeb5G8zFFWlMF5t4wk5R3oBuMRYBfxEMLmOMEK_pqZZ9TXCK0sIqo-U-ZVk8nB6_j3PSVFbLNNr2gUvA5vawxS82wQX73a6m4lxx6fH-wH37Ypq0pxWNmRwAX1kotdr1ZJoPKEa2QW4fTi_diF/s1600/Magician%20Navigation.jpg">
+                </div>
+            </div>
+
+            <div class="columnInfo">
+                <!--Info-->
+                <div class="cardName">
+                    <b><span style="color: #ff50ab; font-size: 150%; padding: 0px 2px 2px;">Magician Navigation</span></b>
+                    <br>(เมจิกเชี่ยน เนวิเกชัน)
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <!--Normal-->
+                <div class="cardInfo">
+                    <b> ประเภท:</b> ปกติ
+                    <img alt="Normal - ปกติ" src="https://images3.wikia.nocookie.net/__cb20120920120541/yugioh/images/thumb/0/01/Normal.svg/18px-Normal.svg.png" style="vertical-align: middle; width: 4%;">
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <div class="cardEffect">
+                    <div style="font-size: 110%; text-align: center;">
+                        <b style="color: #ff50ab;">เอฟเฟ็คกับดัก</b>
+                    </div>
+                    <div class="cardEffect short_text" id="t4">&nbsp;&nbsp;&nbsp;อัญเชิญพิเศษ "Dark Magician" จากบนมือของคุณ 1 ใบ จากนั้น อัญเชิญพิเศษมอนสเตอร์เผ่าจอมเวทย์เลเวล 7 หรือต่ำกว่าจากในเด็คของคุณอีก 1 ใบทันที ถ้าบนสนามของคุณมี "Dark Magician" อยู่ ยกเว้น ในเทิร์นที่การ์ดใบนี้ถูกส่งลงสุสาน
+                        คุณสามารถนำการ์ดใบนี้จากในสุสานของคุณออกนอกเกม จากนั้น เลือกการ์ดเวทมนตร์/กับดักบนสนามอีกฝ่าย 1 ใบ ยกเลิกเอฟเฟ็คการ์ดที่เลือกทันทีจนกว่าจะจบเทิร์นนี้
+                    </div>
+                    <div style="text-align: center;">
+                        <button class="button" id="myBtnT4" onclick="ToggleReadmore('t4','myBtnT4')">แสดง</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="columnCard">
+                <div class="imgCard" style="clear: both; text-align: center;">
+                    <img border="0" data-original-height="614" data-original-width="421" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGzJWUFFyj2IRLjYG7I4ztrijka7VoRQlanZTaUOVxcUBqiNhjxbJJ5hKVP497DAFNCKjf2MDmMx790EKVkMRbiYmIeE7IC0MJCm0hWwSvZEPPibcBleMawzfPsH-YsiT5zRoEACx6kuaSgHVDzNGdzf1VfK5UqU0CjCk2cnGTjYlo-Jwav1G90gAS/s1600/Eternal%20Soul.jpg">
+                </div>
+            </div>
+
+            <div class="columnInfo">
+                <!--Info-->
+                <div class="cardName">
+                    <b><span style="color: #ff50ab; font-size: 150%; padding: 0px 2px 2px;">Eternal Soul</span></b>
+                    <br>(ดวงวิญาณนิรันดร์)
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <!--Continuous-->
+                <div class="cardInfo">
+                    <b> ประเภท:</b> ต่อเนื่อง
+                    <img alt="Continuous - ต่อเนื่อง" src="https://static2.wikia.nocookie.net/__cb20120920115208/yugioh/images/thumb/7/7c/Continuous.svg/18px-Continuous.svg.png" style="vertical-align: middle; width: 4%;">
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <div class="cardEffect">
+                    <div style="font-size: 110%; text-align: center;">
+                        <b style="color: #ff50ab;">เอฟเฟ็คกับดัก</b>
+                    </div>
+                    <div class="cardEffect short_text" id="t2">&nbsp;&nbsp;&nbsp;"Dark Magician" บนโซนมอนสเตอร์ของคุณจะไม่รับเอฟเฟ็คการ์ดอีกฝ่าย เมื่อการ์ดใบนี้ออกจากสนามในสภาพหงายหน้า ทำลายมอนสเตอร์บนสนามของคุณทั้งหมดทันที คุณสามารถใช้เอฟเฟ็คแต่ละอย่างของ "Eternal Soul" ได้เทิร์นละครั้งเท่านั้น
+                        และเลือกใช้ได้แต่อย่างเดียวดังนี้
+                    </div>
+                    <div class="cardEffect short_text" id="t2">
+                        <br>● อัญเชิญพิเศษ "Dark Magician" จากบนมือหรือในสุสานของคุณ 1 ใบทันที
+                        <br>● เลือก "Dark Magic Attack" หรือ "Thousand Knives" จากในเด็คของคุณ 1 ใบเพิ่มขึ้นมือทันที
+                    </div>
+                    <div style="text-align: center;">
+                        <button class="button" id="myBtnT2" onclick="ToggleReadmore('t2','myBtnT2')">แสดง</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="columnCard">
+                <div class="imgCard" style="clear: both; text-align: center;">
+                    <img border="0" data-original-height="614" data-original-width="421" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAWvZadtHYL_x3YEnxVK--R5uIsf9o4hDgg4fhdPSyKSFwrcG0lATg9bFxrKeRD0Zb0NLsBA7jT0S9arLFUyNj-JDyQDcv3i1xlibJDkr42BWZ06VWNUVclhDJbpFt8P5ceFFS5r7qOaz4WbtBv-On-AETdtxi8hGit0yTnIy9MK50QvtdXpAY_dzB/s1600/Magicians%27%20Combination.jpg">
+                </div>
+            </div>
+
+            <div class="columnInfo">
+                <!--Info-->
+                <div class="cardName">
+                    <b><span style="color: #ff50ab; font-size: 150%; padding: 0px 2px 2px;">Magicians' Combination</span></b>
+                    <br>(เมจิกเชี่ยน คอมบิเนชั่น)
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <!--Continuous-->
+                <div class="cardInfo">
+                    <b> ประเภท:</b> ต่อเนื่อง
+                    <img alt="Continuous - ต่อเนื่อง" src="https://static2.wikia.nocookie.net/__cb20120920115208/yugioh/images/thumb/7/7c/Continuous.svg/18px-Continuous.svg.png" style="vertical-align: middle; width: 4%;">
+                </div>
+                <div style="padding: 5px;"></div>
+
+                <div class="cardEffect">
+                    <div style="font-size: 110%; text-align: center;">
+                        <b style="color: #ff50ab;">เอฟเฟ็คกับดัก</b>
+                    </div>
+                    <div class="cardEffect short_text" id="t1">&nbsp;&nbsp;&nbsp;เทิร์นละครั้ง เมื่อมีการเปิดใช้หรือใช้งานเอฟเฟ็คการ์ด(ยกเว้นช่วงความเสียหาย) คุณสามารถสังเวย "Dark Magician" หรือ "Dark Magician Girl" 1 ใบ จากนั้น อัญเชิญพิเศษ "Dark Magician" หรือ "Dark Magician Girl" ที่มีชื่อแตกต่างกันกับการ์ดที่ถูกสังเวยด้วยเอฟเฟ็คนี้จากบนมือหรือในสุสานของคุณ
+                        1 ใบ ถ้าทำสำเร็จ ยกเลิกการใช้งานครั้งนั้นทันที เมื่อการ์ดใบนี้ถูกส่งลงสุสานจากโซนเวทมนตร์/กับดักของคุณ คุณสามารถเลือกทำลายบนสนาม 1 ใบได้ทันที
+                    </div>
+                    <div style="text-align: center;">
+                        <button class="button" id="myBtnT1" onclick="ToggleReadmore('t1','myBtnT1')">แสดง</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        </span>
+    </section>
+
+
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <!-- Footer -->
+    <div class="Lowweb">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                    <img src="logo.png" class="bi" width="50" height="40">
+                    <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+                <span style="color:snow;">© 2022 Company, Inc</span>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>

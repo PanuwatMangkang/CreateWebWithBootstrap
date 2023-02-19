@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+}
+
+.imgBar {
+    display: block;
+}
+
+.imgBarMobile {
+    display: none;
+}
+
+.imgCard img {
+    width: 80%;
+}
+
+
+/* Float four columns side by side */
+
+.columnCard {
+    float: left;
+    width: 40%;
+    padding: 0 2px 2px;
+}
+
+.columnInfo {
+    float: left;
+    width: 60%;
+    padding: 0 2px 2px;
+}
+
+
+/* Remove extra left and right margins, due to padding */
+
+.row {
+    margin: 0 -5px;
+    border-bottom: 2px solid #252525;
+    padding-bottom: 25px;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Responsive columns */
+
+@media screen and (max-width: 600px) {
+    .imgBar {
+        display: none;
+    }
+    .imgBarMobile {
+        display: block;
+    }
+    .columnCard {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .columnInfo {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .imgCard img {
+        width: 80%;
+    }
+}
+
+
+/* Style the counter cards */
+
+.cardName {
+    padding: 10px;
+    text-align: center;
+    background-color: #252525;
+    color: white;
+    border-radius: 5px;
+}
+
+.cardInfo {
+    padding: 10px;
+    text-align: center;
+    background-color: #252525;
+    color: white;
+    border-radius: 5px;
+}
+
+.cardEffect {
+    padding: 10px;
+    text-align: left;
+    background-color: #252525;
+    color: white;
+    border-radius: 5px;
+}
+
+.button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 3px 40px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+.short_text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 10.5ch;
+}
+
+.page .page_body .centered {
+    display: contents;
+    text-align: center;
+}
+
+body {
+    background-color: #252525;
+    height: 770px;
+    overflow: visible;
+}
+
+.slide {
+    background-color: black;
+}
+
+main {
+    height: 770px;
+    display: contents;
+    overflow-y: scroll;
+}
+
+.nav-item {
+    padding-right: 10px;
+}
+
+.logo_head {
+    padding-left: 10px;
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    border-bottom: solid;
+    border-color: white;
+}
+
+.chu_wa_header .rum_kid_chu_mai_ook {
+    display: flex;
+    justify-content: flex-start;
+}
