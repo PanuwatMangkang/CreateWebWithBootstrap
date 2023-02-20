@@ -143,6 +143,10 @@ main {
     padding-right: 10px;
 }
 
+.nav-item :hover {
+    transform: scale(0.9);
+}
+
 .logo_head {
     padding-left: 10px;
 }
